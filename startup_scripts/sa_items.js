@@ -11,6 +11,4 @@ StartupEvents.registry('item', event => {
         .displayName('Incomplete Veridium Shard')
     event.create('incomplete_crimsite_shard', 'create:sequenced_assembly')
         .displayName('Incomplete Crimsite Shard')
-    event.create('incomplete_sulfuric_crystal', 'create:sequenced_assembly')
-        .displayName('Incomplete Sulfuric Crystal')
 })
