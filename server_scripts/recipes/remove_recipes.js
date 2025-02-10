@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'tfmg:mixing/zinc_sulfate' })
     event.remove({ id: 'tfmg:mixing/copper_sulfate' })
     event.remove({ output:{ Fluid: "tconstruct:honey"}} )
-    event.remove({ output: 'minecraft:elytra })
+    event.remove({ output: 'minecraft:elytra' })
     let removeItems = [
         'stator', 'electric_post', 'electric_diode', 'resistor', 'copper_coil','electric_pump', 'diagonal_cable_block', 'cable_tube', 'neon_tube', 'copper_cable_hub', 
         'steel_cable_hub', 'aluminum_cable_hub', 'copper_cable_hub', 'steel_casing_cable_hub', 'heavy_cable_hub', 'voltmeter', 'cable_connector', 'energy_meter',
