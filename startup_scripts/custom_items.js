@@ -23,4 +23,6 @@ StartupEvents.registry('item', event => {
 		.displayName('Deepslate Alloy')
 	event.create('sulfuric_crystal')
 		.displayName('Sulfuric Crystal')
+	event.create('empty_tube')
+		.displayName('Empty Tube')
 })
