@@ -65,4 +65,10 @@ StartupEvents.registry('fluid', event => {
     .displayName('Volcanic Acid')
     .noBucket()
     .noBlock()
+
+    event.create('molten_redstone')
+    .thinTexture(0xe74f4f)
+    .bucketColor(0xe74f4f)
+    .displayName('Molten Redstone')
+    .noBlock()
 })
