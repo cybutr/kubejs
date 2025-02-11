@@ -14,15 +14,6 @@ graph LR
 
 ## Crush Recipes
 
-### Crushed Deepslate
-```mermaid
-graph LR
-    in0["Deepslate"] --> C
-    C[Crush]
-    C --> out0["Crushed Deepslate"]
-    C -.-> out1["1x Crushed Deepslate (50%)"]
-```
-
 ### Sturdy Shards
 ```mermaid
 graph LR
@@ -30,6 +21,14 @@ graph LR
     C[Crush]
     C --> out0["2x Sturdy Shards"]
     C -.-> out1["1x Sturdy Shards (50%)"]
+```
+
+### Crushed Deepslate
+```mermaid
+graph LR
+    C[Crush]
+    C --> out0["Crushed Deepslate"]
+    C -.-> out1["1x Crushed Deepslate (50%)"]
 ```
 
 ## Distill Recipes
@@ -61,6 +60,15 @@ graph LR
     f0["250mb Glow Solution"] --> F
     F[Fill]
     F --> out0["Glowstone Dust"]
+```
+
+### Rose Quartz
+```mermaid
+graph LR
+    in0["Quartz"] --> F
+    f0["630mb Molten Redstone"] --> F
+    F[Fill]
+    F --> out0["Rose Quartz"]
 ```
 
 ## Mix Recipes
@@ -280,6 +288,32 @@ graph LR
     D2 --> out0["Deepslate Alloy"]
 ```
 
+### Electron Tube
+```mermaid
+graph LR
+    start["Unknown Input"]
+    D0["Deploying"]
+    start --> D0
+    in0["Polished Rose Quartz"] --> D0
+    P1["Pressing"]
+    D0 --> P1
+    P1 --> out0["Electron Tube"]
+```
+
+### Empty Tube
+```mermaid
+graph LR
+    start["Glass Bottle"]
+    F0["Filling"]
+    start --> F0
+    in0["180mb Molten Iron"] --> F0
+    C1["Cutting"]
+    F0 --> C1
+    P2["Pressing"]
+    C1 --> P2
+    P2 --> out0["Empty Tube"]
+```
+
 ### Lapis Lazuli
 ```mermaid
 graph LR
@@ -378,16 +412,6 @@ graph LR
 ```
 
 ## Vacuum Recipes
-
-### Water
-```mermaid
-graph LR
-    f0["15mb Purified Water"] --> V
-    f1["150mb Water"] --> V
-    V[Vacuum]
-    V --> out0["145mb Water"]
-    V --> out1["15mb Purified Water"]
-```
 
 ### Sulfuric Solution
 ```mermaid
