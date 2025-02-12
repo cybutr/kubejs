@@ -1,5 +1,5 @@
 StartupEvents.registry('item', event => {
-    event.create('inclomplete_netherrack', 'create:sequenced_assembly')
+    event.create('incomplete_netherrack', 'create:sequenced_assembly')
         .displayName('Incomplete Netherrack')
     event.create('incomplete_lapis_lazuli_catalyst', 'create:sequenced_assembly')
         .displayName('Incomplete Lapis Lazuli Catalyst')

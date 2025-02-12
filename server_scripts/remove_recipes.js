@@ -28,7 +28,8 @@ ServerEvents.recipes(event => {
         'createaddition:crafting/small_light_connector',
         'tfmg:crafting/electric_casing',
         'tfmg:casting/steel',
-        'tfmg:casting/amogus'
+        'tfmg:casting/amogus',
+        'createaddition:crafting/portable_energy_interface'
     ]
     
     let recipeOutputs = [
