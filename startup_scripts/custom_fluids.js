@@ -46,18 +46,35 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0x82bfde)
     .displayName('Purified Water')
     .noBlock()
+    .bucketItem.modelJson({
+        "parent": "minecraft:item/generated",
+        "textures": {
+            "layer0": "kubejs:item/purified_water_bucket"
+        }
+    })
 
     event.create('enriched_water')
     .thinTexture(0xd2e1e3)
     .bucketColor(0xd2e1e3)
     .displayName('Enriched Water')
     .noBlock()
+    .bucketItem.modelJson({
+        "parent": "minecraft:item/generated",
+        "textures": {
+            "layer0": "kubejs:item/enriched_water_bucket"
+        }
+    })
 
     event.create('glow_solution')
     .thinTexture(0xfaf478)
     .bucketColor(0xfaf478)
     .displayName('Glow Solution')
-    .noBlock()
+    .bucketItem.modelJson({
+        "parent": "minecraft:item/generated",
+        "textures": {
+            "layer0": "kubejs:item/glow_solution_bucket"
+        }
+    })
 
     event.create('volcanic_acid')
     .thinTexture(0xf2acb9)
@@ -70,5 +87,43 @@ StartupEvents.registry('fluid', event => {
     .thinTexture(0xe74f4f)
     .bucketColor(0xe74f4f)
     .displayName('Molten Redstone')
+    .noBlock()
+    .bucketItem.modelJson({
+        "parent": "minecraft:item/generated",
+        "textures": {
+            "layer0": "kubejs:item/molten_redstone_bucket"
+        }
+    })
+
+    event.create('skibidi_fluid')
+    .thinTexture(0x9650f)
+    .bucketColor(0x9650f)
+    .displayName('Skibidi Fluid')
+    .noBucket()
+
+    event.create('cum')
+    .thinTexture(0xececd8)
+    .bucketColor(0xececd8)
+    .displayName('Cum')
+    .noBlock()
+    .bucketItem.modelJson({
+        "parent": "minecraft:item/generated",
+        "textures": {
+            "layer0": "kubejs:item/cum_bucket"
+        }
+    })
+
+    event.create('bauxite_slurry')
+    .thinTexture(0xc17f59)
+    .bucketColor(0xc17f59)
+    .displayName('Bauxite Slurry')
+    .noBucket()
+    .noBlock()
+
+    event.create('caustic_solution')
+    .thinTexture(0xe3d5b8)
+    .bucketColor(0xe3d5b8)
+    .displayName('Caustic Solution')
+    .noBucket()
     .noBlock()
 })
