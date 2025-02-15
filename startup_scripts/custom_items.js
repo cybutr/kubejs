@@ -21,6 +21,7 @@ StartupEvents.registry('item', event => {
 	event.create("copper_machine").tooltip("Used to make basic tinkers construct and fluid items").displayName("Copper Machine").parentModel("kubejs:item/copper_machine")
 	event.create("andesite_machine").tooltip("Used to make basic machines for create").displayName("Andesite Machine").parentModel("kubejs:item/andesite_machine")
 	event.create("brass_machine").tooltip("Used to make mid game stuff such as steam engines").displayName("Brass Machine").parentModel("kubejs:item/brass_machine")
+	event.create("steel_machine").tooltip("Used to make heavy machinery such as a pumpjack").displayName("Steel Machine").parentModel("kubejs:item/steel_machine")
 	tool('Saw')
 	tool('Screwdriver')
 	event.create('drill_head').displayName('Drill Head').texture('kubejs:item/drill_head')

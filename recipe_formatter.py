@@ -275,7 +275,7 @@ class RecipeParser:
             output_items = set()  # Initialize output tracking set
             
             # Look for output array or single output - expanded pattern to catch all variants
-            output_match = re.search(r'pressurizing\(\s*(?:\[([^\]]+)\]|(?:Item\.of|Fluid\.of)\([\'"]([^\'"]+)[\'"](,\s*(\d+))?\))', content)
+            output_match = re.search(r'pressurizing\(\s*(?:\[([^\]]+)\]|(?:Item\.of|Fluid\.of)\([\'"]([^\'"]+)[\'"](,\s*(\d+))?\)|[\'"]([^\'"]+)[\'"])', content)
             if output_match:
                 if output_match.group(1):  # Array of outputs
                     outputs_section = output_match.group(1)
@@ -290,18 +290,23 @@ class RecipeParser:
                         })
                         output_items.add(out_match.group(1))
                 else:  # Single output
-                    name = output_match.group(2).split(':')[-1].replace('_', ' ').title()
-                    amount = output_match.group(4) or '1'
-                    recipe['outputs'].append({
-                        'name': name,
-                        'amount': int(amount),
-                        'chance': 1.0
-                    })
-                    output_items.add(output_match.group(2))
+                    name = output_match.group(2) or output_match.group(5)
+                    if name:
+                        name = name.split(':')[-1].replace('_', ' ').title()
+                        amount = output_match.group(4) or '1'
+                        recipe['outputs'].append({
+                            'name': name,
+                            'amount': int(amount),
+                            'chance': 1.0
+                        })
+                        output_items.add(output_match.group(2) or output_match.group(5))
 
-            # Parse inputs after outputs
-            input_section = content[output_match.end():]
-            
+                # Parse inputs after outputs
+                input_section = content[output_match.end():]
+            else:
+                # If no output match found, try to parse just inputs
+                input_section = content[content.find('(') + 1:]
+
             # Parse inputs normally
             for match in re.finditer(r'Item\.of\([\'"]([^\'"]+)[\'"](,\s*(\d+))?\)', input_section):
                 name = match.group(1)
@@ -393,7 +398,7 @@ class RecipeParser:
                     else:
                         recipe['inputs'].add(name)
                 # Parse fluid inputs
-                for fluid_match in re.finditer(r'Fluid\.(?:of\([\'"]([^\'"]+)[\'"]\s*,\s*(\d+)\)|water\((\d+)\)|lava\((\d+)\))', inputs_section):
+                for fluid_match in re.finditer(r'Fluid\.(?:of\([\'"]([^\'"]+)[\'"](,\s*(\d+))?\)|water\((\d+)\)|lava\((\d+)\))', inputs_section):
                     if fluid_match.group(1):  # Fluid.of case
                         name = fluid_match.group(1).split(':')[-1].replace('_', ' ').title()
                         amount = fluid_match.group(2)
@@ -405,18 +410,65 @@ class RecipeParser:
         # Handle compacting recipes specially
         elif 'create.compacting' in content:
             recipe['type'] = 'Compact'
-            # Extract output from first argument
-            match = re.search(r'compacting\(\s*[\'"]([^\'"]+)[\'"]', content)
-            if match:
-                name = match.group(1).split(':')[-1].replace('_', ' ').title()
-                recipe['outputs'].append({
-                    'name': name,
-                    'amount': 1,
-                    'chance': 1.0
-                })
-
-            # Parse the rest of inputs and fluids as normal
-            input_section = content[match.end():]
+            
+            # Look for the full compacting pattern with outputs and inputs
+            compact_match = re.search(r'compacting\((.*?)\)', content, re.DOTALL)
+            if compact_match:
+                full_recipe = compact_match.group(1)
+                parts = full_recipe.split(',', 1)  # Split into output and inputs
+                
+                # Parse output part
+                output_part = parts[0].strip()
+                if output_part.startswith('['):
+                    # Array output
+                    for match in re.finditer(r'(?:Item|Fluid)\.of\([\'"]([^\'"]+)[\'"](,\s*(\d+))?\)', output_part):
+                        name = match.group(1).split(':')[-1].replace('_', ' ').title()
+                        amount = match.group(3) or '1'
+                        recipe['outputs'].append({
+                            'name': name,
+                            'amount': int(amount),
+                            'chance': 1.0
+                        })
+                else:
+                    # Single output
+                    match = re.search(r'[\'"]([^\'"]+)[\'"]', output_part)
+                    if match:
+                        name = match.group(1).split(':')[-1].replace('_', ' ').title()
+                        recipe['outputs'].append({
+                            'name': name,
+                            'amount': 1,
+                            'chance': 1.0
+                        })
+                
+                # Parse inputs if they exist
+                if len(parts) > 1:
+                    input_part = parts[1].strip()
+                    if input_part.startswith('['):
+                        # Parse array inputs
+                        for match in re.finditer(r'Item\.of\([\'"]([^\'"]+)[\'"](,\s*(\d+))?\)', input_part):
+                            name = match.group(1)
+                            if not name.startswith('#'):
+                                clean_name = name.split(':')[-1].replace('_', ' ').title()
+                                amount = match.group(3) or '1'
+                                if int(amount) > 1:
+                                    recipe['inputs'].add(f"{amount}x {clean_name}")
+                                else:
+                                    recipe['inputs'].add(clean_name)
+                            else:
+                                recipe['inputs'].add(name)
+                                
+                        # Parse fluid inputs
+                        for fluid_match in re.finditer(r'Fluid\.(?:of\([\'"]([^\'"]+)[\'"](,\s*(\d+))?\)|water\((\d+)\)|lava\((\d+)\))', input_part):
+                            if fluid_match.group(1):  # Fluid.of case
+                                name = fluid_match.group(1).split(':')[-1].replace('_', ' ').title()
+                                amount = fluid_match.group(3) or '1000'
+                            else:  # water/lava case
+                                name = 'Water' if 'water' in fluid_match.group(0) else 'Lava'
+                                amount = fluid_match.group(4) or fluid_match.group(5) or '1000'
+                            recipe['fluids'].append(f"{amount}mb {name}")
+            
+            recipe['inputs'] = sorted(list(recipe['inputs']))
+            return recipe
 
         # Parse outputs first - they're always the first argument
         output_start = content.find('(', content.find(recipe['type'].lower())) + 1
