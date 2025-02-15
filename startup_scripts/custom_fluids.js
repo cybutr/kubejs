@@ -126,4 +126,18 @@ StartupEvents.registry('fluid', event => {
     .displayName('Caustic Solution')
     .noBucket()
     .noBlock()
+
+    event.create('zinc_chloride')
+    .thinTexture(0xd4d6d8)
+    .bucketColor(0xd4d6d8)
+    .displayName('Zinc Chloride')
+    .noBucket()
+    .noBlock()
+
+    event.create('stabilizing_agent')
+    .thinTexture(0xe3d5b8)
+    .bucketColor(0xe3d5b8)
+    .displayName('Stabilizing Agent')
+    .noBucket()
+    .noBlock()
 })

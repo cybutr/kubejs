@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('kubejs:drill_head', 1),
         [
-            ' C',
+            ' C ',
             'CBC',
             'BAB'
         ],

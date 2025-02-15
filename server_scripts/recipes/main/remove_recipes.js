@@ -81,7 +81,27 @@ ServerEvents.recipes(event => {
         'vintageimprovements:craft/spring_coiling_machine',
         'tfmg:crafting/copycat_cable_block',
         'tfmg:crafting/copper_wire_plastic',
-        'tfmg:crafting/copper_wire'
+        'tfmg:crafting/copper_wire',
+        'create_sa:zinc_handle_recipe',
+        'create_sa:brass_drill_head_recipe',
+        'tfmg:sequenced_assembly/steel_mechanism',
+        'tfmg:sequenced_assembly/turbine_engine',
+        'tfmg:sequenced_assembly/gasoline_engine',
+        'tfmg:sequenced_assembly/lpg_engine',
+        'tfmg:crafting/casting_spout',
+        'createaddition:crafting/diamond_grit_sandpaper',
+        'tconstruct:smeltery/alloys/molten_manyullyn',
+        'functionalstorage:linking_tool',
+        'functionalstorage:configuration_tool',
+        'tfmg:polarizing/magnetic_ingot',
+        'tfmg:milling/limesand',
+        'create_dd:crafting/kinetics/kinetic_motor',
+        'create_dd:crafting/fan_catalyst/splashing_sail',
+        'create_dd:crafting/fan_catalyst/haunting_sail',
+        'create_dd:crafting/fan_catalyst/smoking_sail',
+        'create_dd:crafting/fan_catalyst/blasting_sail',
+        'create_dd:crafting/fan_catalyst/freezing_sail',
+        'create_dd:crafting/fan_catalyst/sanding_sail'
     ]
     
     let recipeOutputs = [
@@ -115,7 +135,7 @@ ServerEvents.recipes(event => {
     let removeTFMGItems = [
         'stator', 'electric_post', 'electric_diode', 'resistor', 'copper_coil','electric_pump', 'diagonal_cable_block', 'cable_tube', 'neon_tube', 'copper_cable_hub', 
         'steel_cable_hub', 'aluminum_cable_hub', 'copper_cable_hub', 'steel_casing_cable_hub', 'heavy_cable_hub', 'voltmeter', 'cable_connector', 'energy_meter',
-        'traffic_light', 'voltage_observer', 'light_bulb', 'rbg_light_bulb', 'brass_cable_hub', 'segmented_display', 'fuse_block', 'capacitor', 'accumulator', 'polarizer',
+        'traffic_light', 'voltage_observer', 'light_bulb', 'rgb_light_bulb', 'brass_cable_hub', 'segmented_display', 'fuse_block', 'capacitor', 'accumulator', 'polarizer',
         'transistor', 'converter', 'generator', 'rotor', 'electric_motor', 'galvanic_cell']
     removeTFMGItems.forEach(item => {
         event.remove({output: 'tfmg:' + item})

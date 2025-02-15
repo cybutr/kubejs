@@ -153,4 +153,34 @@ ServerEvents.recipes(event => {
             E: 'create:linked_controller'
         }
     ).id('kubejs:shaped/framed_controller_extension')
+    event.shaped(
+        Item.of(FC('linking_tool'), 1),
+        [
+            'AAB',
+            'ACB',
+            'ADE'
+        ],
+        {
+            A: 'minecraft:paper',
+            B: 'create:brass_ingot',
+            C: 'kubejs:brass_machine',
+            D: 'minecraft:netherite_ingot',
+            E: 'create:linked_controller'
+        }
+    ).id('kubejs:shaped/linking_tool')
+    event.shaped(
+        Item.of(FC('configuration_tool'), 1),
+        [
+            'AAB',
+            'ACB',
+            'ADE'
+        ],
+        {
+            A: 'minecraft:paper',
+            B: 'tfmg:aluminum_ingot',
+            C: 'kubejs:copper_machine',
+            D: 'minecraft:emerald',
+            E: '#forge:screwdrivers'
+        }
+    ).id('kubejs:shaped/configuration_tool')
 })

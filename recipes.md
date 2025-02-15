@@ -5,11 +5,28 @@
 ### Dirt
 ```mermaid
 graph LR
-    in0["#forge:seeds"] --> C
-    in1["#minecraft:saplings"] --> C
-    f0["120mb Liquid Fertilizer"] --> C
     C[Compact]
     C --> out0["Dirt"]
+```
+
+### Unknown
+```mermaid
+graph LR
+    C[Compact]
+```
+
+### Fortrens
+```mermaid
+graph LR
+    C[Compact]
+    C --> out0["Fortrens"]
+```
+
+### Ink Sac
+```mermaid
+graph LR
+    C[Compact]
+    C --> out0["Ink Sac"]
 ```
 
 ## Crush Recipes
@@ -29,6 +46,24 @@ graph LR
     C[Crush]
     C --> out0["Crushed Deepslate"]
     C -.-> out1["1x Crushed Deepslate (50%)"]
+```
+
+### Limestone Shard
+```mermaid
+graph LR
+    in0["Limestone"] --> C
+    C[Crush]
+    C --> out0["Limestone Shard"]
+    C -.-> out1["1x Limestone Shard (50%)"]
+```
+
+### Limesand
+```mermaid
+graph LR
+    in0["Limestone Shard"] --> C
+    C[Crush]
+    C --> out0["Limesand"]
+    C -.-> out1["1x Limesand (50%)"]
 ```
 
 ## Distill Recipes
@@ -71,7 +106,50 @@ graph LR
     F --> out0["Rose Quartz"]
 ```
 
+### Cum Bottle
+```mermaid
+graph LR
+    f0["250mb Cum"] --> F
+    F[Fill]
+    F --> out0["Cum Bottle"]
+```
+
+### Unknown
+```mermaid
+graph LR
+    in0["Thermite Grenade"] --> F
+    f0["750mb Liquid Plastic"] --> F
+    F[Fill]
+```
+
+### Diamond Grit Sandpaper
+```mermaid
+graph LR
+    f0["750mb Molten Diamond"] --> F
+    F[Fill]
+    F --> out0["Diamond Grit Sandpaper"]
+```
+
 ## Mix Recipes
+
+### Bauxite Slurry
+```mermaid
+graph LR
+    in0["2x Bauxite Shard"] --> M
+    f0["175mb Caustic Solution"] --> M
+    f1["200mb Water"] --> M
+    M[Mix]
+    M --> out0["850mb Bauxite Slurry"]
+```
+
+### Caustic Solution
+```mermaid
+graph LR
+    f0["250mb Water"] --> M
+    f1["125mb Molten Redstone"] --> M
+    M[Mix]
+    M --> out0["375mb Caustic Solution"]
+```
 
 ### Crystalline Acid
 ```mermaid
@@ -125,6 +203,7 @@ graph LR
 ```mermaid
 graph LR
     f0["1000mb Water"] --> M
+    f1["250mb Cooling Fluid"] --> M
     M[Mix]
     M --> out0["200mb Nitrogen"]
 ```
@@ -137,6 +216,14 @@ graph LR
     f0["450mb Enriched Water"] --> M
     M[Mix]
     M --> out0["4x Ochrum"]
+```
+
+### Unknown
+```mermaid
+graph LR
+    in0["#minecraft:saplings"] --> M
+    f0["250mb Earth Slime"] --> M
+    M[Mix]
 ```
 
 ### Volcanic Acid
@@ -157,6 +244,16 @@ graph LR
     M --> out0["200mb Zinc Solution"]
 ```
 
+### Propane
+```mermaid
+graph LR
+    f0["500mb Kerosene"] --> M
+    f1["350mb Gasoline"] --> M
+    f2["150mb Naphtha"] --> M
+    M[Mix]
+    M --> out0["1000mb Propane"]
+```
+
 ## Pressurize Recipes
 
 ### Asurine
@@ -167,6 +264,13 @@ graph LR
     f1["40mb Molten Zinc"] --> P
     P[Pressurize]
     P --> out0["Asurine"]
+```
+
+### Calcite
+```mermaid
+graph LR
+    P[Pressurize]
+    P --> out0["Calcite"]
 ```
 
 ### Copper Sulfate
@@ -233,6 +337,25 @@ graph LR
 
 ## Sequence Recipes
 
+### Alumina Crystal
+```mermaid
+graph LR
+    subgraph Metadata
+        loops["2 Loops"]
+    end
+    start["Quartz"]
+    F0["Filling"]
+    start --> F0
+    in0["125mb Crystalline Acid"] --> F0
+    F1["Filling"]
+    F0 --> F1
+    in1["75mb Glow Solution"] --> F1
+    F2["Filling"]
+    F1 --> F2
+    in2["100mb Fertilizer"] --> F2
+    F2 --> out0["Alumina Crystal"]
+```
+
 ### Asurine Shard
 ```mermaid
 graph LR
@@ -253,6 +376,41 @@ graph LR
     P4 -.-> out0["3x Asurine Shard (75%)"]
     P4 -.-> out1["2x Asurine Shard (20%)"]
     P4 -.-> out2["Light Blue Dye (5%)"]
+```
+
+### Bauxite
+```mermaid
+graph LR
+    subgraph Metadata
+        loops["3 Loops"]
+    end
+    start["Alumina Crystal"]
+    F0["Filling"]
+    start --> F0
+    in0["90mb Bauxite Slurry"] --> F0
+    D1["Deploying"]
+    F0 --> D1
+    in1["Redstone"] --> D1
+    D1 --> out0["Bauxite"]
+```
+
+### Bauxite Shard
+```mermaid
+graph LR
+    subgraph Metadata
+        loops["2 Loops"]
+    end
+    start["Obsidian Alloy"]
+    F0["Filling"]
+    start --> F0
+    in0["125mb Caustic Solution"] --> F0
+    C1["Cutting"]
+    F0 --> C1
+    F2["Filling"]
+    C1 --> F2
+    in2["100mb Fertilizer"] --> F2
+    F2 -.-> out0["2x Bauxite Shard (80%)"]
+    F2 -.-> out1["3x Bauxite Shard (20%)"]
 ```
 
 ### Calcite Catalyst
@@ -291,7 +449,7 @@ graph LR
 ### Electron Tube
 ```mermaid
 graph LR
-    start["Unknown Input"]
+    start["Empty Tube"]
     D0["Deploying"]
     start --> D0
     in0["Polished Rose Quartz"] --> D0
@@ -339,16 +497,16 @@ graph LR
         loops["2 Loops"]
     end
     start["Stone"]
-    F0["Filling"]
-    start --> F0
-    C1["Cutting"]
-    F0 --> C1
-    P2["Pressing"]
-    C1 --> P2
-    D3["Deploying"]
-    P2 --> D3
-    D3 -.-> out0["4x Lapis Lazuli Catalyst (75%)"]
-    D3 -.-> out1["3x Lapis Lazuli Catalyst (25%)"]
+    D0["Deploying"]
+    start --> D0
+    F1["Filling"]
+    D0 --> F1
+    C2["Cutting"]
+    F1 --> C2
+    P3["Pressing"]
+    C2 --> P3
+    P3 -.-> out0["4x Lapis Lazuli Catalyst (75%)"]
+    P3 -.-> out1["3x Lapis Lazuli Catalyst (25%)"]
 ```
 
 ### Netherrack
@@ -409,6 +567,94 @@ graph LR
     D3 --> P4
     P4 -.-> out0["2x Sulfuric Crystal (90%)"]
     P4 -.-> out1["Sulfuric Crystal (10%)"]
+```
+
+### Andesite Machine
+```mermaid
+graph LR
+    start["Andesite Casing"]
+    D0["Deploying"]
+    start --> D0
+    in0["Anuggets"] --> D0
+    D1["Deploying"]
+    D0 --> D1
+    in1["Anuggets"] --> D1
+    D2["Deploying"]
+    D1 --> D2
+    in2["Cogwheel"] --> D2
+    D3["Deploying"]
+    D2 --> D3
+    in3["Saws"] --> D3
+    P4["Pressing"]
+    D3 --> P4
+    P4 --> out0["Andesite Machine"]
+```
+
+### Unknown
+```mermaid
+graph LR
+    start["Unknown Input"]
+    C0["Cutting"]
+    start --> C0
+    P1["Pressing"]
+    C0 --> P1
+    F2["Filling"]
+    P1 --> F2
+    D3["Deploying"]
+    F2 --> D3
+```
+
+```mermaid
+graph LR
+    No sequence found
+```
+```mermaid
+graph LR
+    No sequence found
+```
+```mermaid
+graph LR
+    No sequence found
+```
+```mermaid
+graph LR
+    No sequence found
+```
+```mermaid
+graph LR
+    No sequence found
+```
+### Steel Mechanism
+```mermaid
+graph LR
+    start["Heavy Plate"]
+    start --> out0["Steel Mechanism"]
+    start -.-> out1["Heavy Plate (8%)"]
+    start -.-> out2["Steel Ingot (8%)"]
+    start -.-> out3["Aluminum Ingot (5%)"]
+    start -.-> out4["Industrial Pipe (3%)"]
+```
+
+### Steel Machine
+```mermaid
+graph LR
+    start["Heavy Machinery Casing"]
+    D0["Deploying"]
+    start --> D0
+    in0["Steel Mechanism"] --> D0
+    D1["Deploying"]
+    D0 --> D1
+    in1["Electron Tube"] --> D1
+    F2["Filling"]
+    D1 --> F2
+    in2["40mb Molten Slag"] --> F2
+    D3["Deploying"]
+    F2 --> D3
+    in3["Turbine Blade"] --> D3
+    D4["Deploying"]
+    D3 --> D4
+    in4["Screwdrivers"] --> D4
+    D4 --> out0["Steel Machine"]
 ```
 
 ## Vacuum Recipes
