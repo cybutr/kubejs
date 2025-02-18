@@ -140,4 +140,18 @@ StartupEvents.registry('fluid', event => {
     .displayName('Stabilizing Agent')
     .noBucket()
     .noBlock()
+
+    event.create('cassiterite_slurry')
+    .thinTexture(0xc9adad)
+    .bucketColor(0xc9adad)
+    .displayName('Cassiterite Slurry')
+    .noBucket()
+    .noBlock()
+
+    event.create('tin_slurry')
+    .thinTexture(0xaabcbc)
+    .bucketColor(0xaabcbc)
+    .displayName('Tin Slurry')
+    .noBucket()
+    .noBlock()
 })

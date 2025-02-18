@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     let inter2 = 'tfmg:heavy_machinery_casing'
     event.recipes.create.sequenced_assembly(
         Item.of('kubejs:steel_machine', 1),
-        Item.of('tfmg:heavy_machinery_casing', 1),
+        Item.of('kubejs:tsteel_machine', 1),
         [event.recipes.createDeploying(inter2, [inter2, 'tfmg:steel_mechanism']),
         event.recipes.createDeploying(inter2, [inter2, 'create:electron_tube']),
         event.recipes.createFilling(inter2, [inter2, Fluid.of('tfmg:molten_slag', 40)]),
