@@ -70,4 +70,30 @@ ServerEvents.recipes(event => {
             C: 'create:andesite_alloy'
         }
     ).id('kubejs:shaped/drill_head')
+
+    event.shaped(
+        Item.of('tconstruct:seared_melter', 1),
+        [
+            '   ',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'tconstruct:seared_brick',
+            B: 'kubejs:copper_machine'
+        }
+    ).id('kubejs:shaped/seared_melter')
+
+    event.shaped(
+        Item.of('tconstruct:scorched_alloyer', 1),
+        [
+            '   ',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'tconstruct:scorched_brick',
+            B: 'kubejs:copper_machine'
+        }
+    ).id('kubejs:shaped/scorched_alloyer')
 })

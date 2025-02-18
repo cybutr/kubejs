@@ -9,8 +9,8 @@ ServerEvents.recipes(event => {
     let w = 'create:wrench'
     sc('create:andesite_funnel', c, 3)
     sc('create:andesite_tunnel', c, 3)
-    sc('create:gearbox', c, 2)
-    sc('create:vertical_gearbox', c, 2)
+    sc('create:gearbox', c, 3)
+    sc('create:vertical_gearbox', c, 3)
     sc('create:portable_storage_interface', c, 2)
     sm('create:encased_fan', c, w, 'create:propeller')
     sm('create:mechanical_press', c, w, 'minecraft:iron_block')
@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
     sm('create:rope_pulley', c, w, 'farmersdelight:rope')
     sm('create:mechanical_drill', c, w, 'kubejs:drill_head')
     sm('create:mechanical_saw', c, w, 'kubejs:saw_blade')
+    sm('create:deployer', c, w, 'create:brass_hand')
 
     event.shaped(
         Item.of('create:large_water_wheel', 1),

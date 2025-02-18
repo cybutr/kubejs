@@ -4,5 +4,5 @@ ServerEvents.recipes(event => {
     Item.of('kubejs:obsidian_alloy'),
         [event.recipes.createFilling(inter, [inter, Fluid.of('kubejs:caustic_solution', 125)]),
         event.recipes.createCutting(inter, inter),
-        event.recipes.createFilling(inter, [inter, Fluid.of('sliceanddice:fertilizer', 100)])]).transitionalItem(inter).loops(2).id('kubejs:sequence/bauxite_shard')
+        event.recipes.createFilling(inter, [inter, Fluid.of('sliceanddice:fertilizer', 100)])]).transitionalItem(inter).loops(1).id('kubejs:sequence/bauxite_shard')
 })
