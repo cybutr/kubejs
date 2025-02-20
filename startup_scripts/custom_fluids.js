@@ -154,4 +154,18 @@ StartupEvents.registry('fluid', event => {
     .displayName('Tin Slurry')
     .noBucket()
     .noBlock()
+
+    event.create('malachite_solution')
+    .thinTexture(0xb9a56e)
+    .bucketColor(0xb9a56e)
+    .displayName('Malachite Solution')
+    .noBucket()
+    .noBlock()
+
+    event.create('azurite_acid')
+    .thinTexture(0x6391b0)
+    .bucketColor(0x6391b0)
+    .displayName('Azurite Acid')
+    .noBucket()
+    .noBlock()
 })
