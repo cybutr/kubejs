@@ -22,10 +22,19 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: 'create:crafting/kinetics/mechanical_crafter' }, 'create:brass_casing', 'kubejs:brass_machine')
     event.replaceInput({ id: 'create:crafting/kinetics/mechanical_arm' }, 'create:brass_casing', 'kubejs:brass_machine')
     event.replaceInput({ id: 'create:crafting/kinetics/rotation_speed_controller' }, 'create:brass_casing', 'kubejs:brass_machine')
+    event.replaceInput({ id: 'vs_clockwork:crafting/kinetics/command_seat' }, 'create:brass_casing', 'kubejs:brass_machine')
     event.replaceInput({ id: 'create:crafting/logistics/stockpile_switch' }, 'create:brass_casing', 'kubejs:brass_machine')
     event.replaceInput({ id: 'create:crafting/logistics/content_observer' }, 'create:brass_casing', 'kubejs:brass_machine')
+    event.replaceInput({ id: 'vs_clockwork:crafting/kinetics/alt_meter' }, 'create:brass_casing', 'kubejs:brass_machine')
     event.replaceInput({ id: 'create:crafting/kinetics/smart_chute' }, 'create:brass_sheet', 'create_dd:integrated_mechanism')
     event.replaceInput({ id: 'computercraft:pocket_computer_advanced' }, 'minecraft:golden_apple', 'create_dd:linked_controller')
+    event.replaceInput({ id: 'vintageimprovements:craft/vacuum_chamber' }, 'create:andesite_casing', 'kubejs:copper_machine')
+    event.replaceInput({ id: 'vs_clockwork:crafting/mechanical/gravitron' }, 'create:iron_sheet', 'create_dd:shadow_steel_sheet')
+    event.replaceInput({ id: 'vs_clockwork:crafting/kinetics/flap_bearing' }, 'create:andesite_casing', 'kubejs:andesite_machine')
+    event.replaceInput({ id: 'vs_clockwork:crafting/kinetics/phys_bearing' }, 'create:andesite_casing', 'kubejs:andesite_machine')
+    event.replaceInput({ id: 'vs_clockwork:crafting/kinetics/propeller_bearing' }, 'create:andesite_casing', 'kubejs:andesite_machine')
+    event.replaceInput({ id: 'vs_clockwork:crafting/kinetics/redstone_resistor' }, 'create:andesite_casing', 'kubejs:brass_machine')
+    event.replaceInput({ id: 'vs_clockwork:crafting/kinetics/physics_infuser' }, 'create:sturdy_sheet', 'tfmg:steel_sheet')
     
     let sids = [
         'tfmg:crafting/diesel_engine_expansion',

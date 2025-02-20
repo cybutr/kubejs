@@ -191,6 +191,12 @@ ServerEvents.recipes(event => {
         'minecraft:minecraft.lingering_potion.flying.effect.attributeslib.flying..Duration..18000.to.minecraft.lingering_potion.flying.effect.attributeslib.flying..Duration..36000',
         'minecraft:minecraft.splash_potion.flying.effect.attributeslib.flying..Duration..36000.to.minecraft.lingering_potion.flying.effect.attributeslib.flying..Duration..36000',
         'minecraft:jei.tipped.arrow.item.minecraft.tipped_arrow.effect.flying',
+        'alexsmobs:squid_grapple',
+        'create_dd:mixing/ochrum',
+        'create_dd:mixing/veridium',
+        'create_dd:mixing/potassic',
+        'create_dd:mixing/crimsite',
+        'trackwork:phys_track'
         
 
     ]

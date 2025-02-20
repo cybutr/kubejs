@@ -115,4 +115,5 @@
         'create_dd:caramel',
         'create_dd:caramel_milkshake',
         'create_dd:sealed_mechanism',
+        'alexsmobs:squid_grapple'
     ])})
