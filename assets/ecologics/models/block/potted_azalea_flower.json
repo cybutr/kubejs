@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "ecologics:block/azalea_flower",
+    "dirt": "block/moss_block"
+  }
+}

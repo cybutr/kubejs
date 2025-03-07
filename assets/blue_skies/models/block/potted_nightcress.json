@@ -1,0 +1,23 @@
+{
+  "parent": "block/cross",
+  "loader": "forge:composite",
+  "children": {
+    "base": {
+      "parent": "block/flower_pot_cross",
+      "textures": {
+        "plant": "blue_skies:block/plants/nightcress"
+      },
+	  "render_type": "cutout_mipped"
+    },
+    "emissive": {
+      "parent": "blue_skies:block/flower_pot_cross_glowing",
+      "textures": {
+        "plant": "blue_skies:block/plants/nightcress_glow"
+      },
+	  "render_type": "cutout"
+    }
+  },
+  "textures": {
+    "particle": "blue_skies:block/plants/nightcress"
+  }
+}

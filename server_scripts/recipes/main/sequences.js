@@ -4,9 +4,10 @@ ServerEvents.recipes(event => {
         [event.recipes.create.deploying(bhinter, [bhinter, 'create:brass_sheet']),
         event.recipes.create.filling(bhinter, [bhinter, Fluid.of('tconstruct:molten_brass', 550)])]).transitionalItem(bhinter).loops(1).id('kubejs:sequenced_assembly/brass_drill_head')
     let peinter = Item.of('minecraft:redstone_block')
-    event.recipes.create.sequenced_assembly('advancedperipherals:peripheral_casing', 'minecraft:redstone_block',
-        [event.recipes.create.filling(peinter, [peinter, Fluid.of('tconstruct:molten_copper', 450)]), 
-        event.recipes.create.filling(peinter, [peinter, Fluid.of('tconstruct:molten_steel', 250)]),
+    event.recipes.create.sequenced_assembly('advancedperipherals:peripheral_casing', 'kubejs:steel_machine',
+        [event.recipes.create.deploying(peinter, [peinter, 'minecraft:redstone_block']),
+        event.recipes.create.filling(peinter, [peinter, Fluid.of('tconstruct:molten_copper', 450)]), 
+        event.recipes.create.filling(peinter, [peinter, Fluid.of('tfmg:molten_steel', 250)]),
         event.recipes.create.deploying(peinter, [peinter, Item.of('create_dd:calculation_mechanism')]),
         event.recipes.create.pressing(peinter, peinter)]).transitionalItem(peinter).loops(1).id('kubejs:sequenced_assembly/peripheral_casing')
     let aminter = Item.of('minecraft:medium_amethyst_bud')

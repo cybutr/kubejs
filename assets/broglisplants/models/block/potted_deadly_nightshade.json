@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_forest",
+  "textures": {
+    "plant": "broglisplants:block/deadly_nightshade_block"
+  },
+  "render_type": "cutout"
+}

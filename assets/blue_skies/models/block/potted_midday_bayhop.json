@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/flower_pot_cross_custom",
+    "textures": {
+        "plant": "blue_skies:block/plants/midday_bayhop",
+        "dirt": "blue_skies:block/misc/midnight_sand"
+    }
+}

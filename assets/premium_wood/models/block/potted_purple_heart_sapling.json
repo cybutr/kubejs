@@ -1,0 +1,6 @@
+{
+    "parent": "block/flower_pot_cross_jungle",
+    "textures": {
+        "plant": "premium_wood:block/purple_heart/purple_heart_sapling"
+    }
+}

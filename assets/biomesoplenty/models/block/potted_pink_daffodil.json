@@ -1,0 +1,73 @@
+{
+	"credit": "mr_ch0c0late",
+	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"plant": "biomesoplenty:block/pink_daffodil",
+		"petals": "biomesoplenty:block/pink_daffodil_petals",
+		"particle": "#flowerpot",
+		"flowerpot": "block/custom_flower_pot",
+		"dirt": "biomesoplenty:block/bop_flower_pot_soil"
+	},
+	"elements": [
+		{
+			"from": [2.6, 4, 8],
+			"to": [13.4, 16, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#plant"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#plant"}
+			}
+		},
+		{
+			"from": [8, 4, 2.6],
+			"to": [8, 16, 13.4],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#plant"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#plant"}
+			}
+		},
+		{
+			"from": [4, 7, 4],
+			"to": [12, 7, 12],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#petals"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#petals"}
+			}
+		},
+		{
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"faces": {
+				"north": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"east": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"south": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"west": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"up": {"uv": [0, 4, 6, 10], "texture": "#flowerpot"},
+				"down": {"uv": [6, 4, 12, 10], "texture": "#flowerpot", "cullface": "down"}
+			}
+		},
+		{
+			"from": [6, 4, 6],
+			"to": [10, 4, 10],
+			"faces": {
+				"up": {"uv": [0, 0, 4, 4], "texture": "#dirt"}
+			}
+		},
+		{
+			"from": [10, 6, 10],
+			"to": [6, 4, 6],
+			"faces": {
+				"north": {"uv": [5, 12, 1, 10], "texture": "#flowerpot"},
+				"east": {"uv": [5, 12, 1, 10], "texture": "#flowerpot"},
+				"south": {"uv": [5, 12, 1, 10], "texture": "#flowerpot"},
+				"west": {"uv": [5, 12, 1, 10], "texture": "#flowerpot"}
+			}
+		}
+	]
+}

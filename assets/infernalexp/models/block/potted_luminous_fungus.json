@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "infernalexp:block/luminous_fungus",
+    "dirt": "infernalexp:block/dullstone"
+  }
+}

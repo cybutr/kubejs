@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_taiga",
+  "textures": {
+    "plant": "atmospheric:block/currant_seedling"
+  }
+}

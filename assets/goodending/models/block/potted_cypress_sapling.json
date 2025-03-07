@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_swamp",
+  "textures": {
+    "plant": "goodending:block/cypress_sapling"
+  }
+}

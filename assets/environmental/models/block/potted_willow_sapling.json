@@ -1,0 +1,6 @@
+{
+    "parent": "block/flower_pot_cross_swamp",
+    "textures": {
+        "plant": "environmental:block/willow_sapling"
+    }
+}

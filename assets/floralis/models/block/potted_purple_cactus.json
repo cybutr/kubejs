@@ -1,0 +1,7 @@
+{
+  "parent": "floralis:block/template_potted_cactus",
+  "textures": {
+    "plant": "floralis:block/purple_cactus"
+  },
+  "render_type": "cutout"
+}

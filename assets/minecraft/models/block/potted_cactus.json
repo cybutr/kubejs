@@ -1,0 +1,47 @@
+{
+	"credit": "mr_ch0c0late",
+	"ambientocclusion": false,
+	"textures": {
+		"plant": "block/potted_cactus",
+		"particle": "#flowerpot",
+		"flowerpot": "block/custom_flower_pot"
+	},
+	"elements": [
+		{
+			"from": [6, 5, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"up": {"uv": [0, 11, 4, 15], "texture": "#plant"}
+			}
+		},
+		{
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"faces": {
+				"north": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"east": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"south": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"west": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"up": {"uv": [0, 4, 6, 10], "texture": "#flowerpot"},
+				"down": {"uv": [6, 4, 12, 10], "texture": "#flowerpot", "cullface": "down"}
+			}
+		},
+		{
+			"from": [5, 6, 6],
+			"to": [11, 16, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 6, 10], "texture": "#plant"},
+				"south": {"uv": [0, 0, 6, 10], "texture": "#plant"}
+			}
+		},
+		{
+			"from": [6, 6, 5],
+			"to": [10, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 11, 8]},
+			"faces": {
+				"east": {"uv": [6, 0, 12, 10], "texture": "#plant"},
+				"west": {"uv": [6, 0, 12, 10], "texture": "#plant"}
+			}
+		}
+	]
+}

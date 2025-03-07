@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "biomemakeover:block/blighted_balsa_sapling",
+    "dirt": "block/mycelium_top"
+  }
+}

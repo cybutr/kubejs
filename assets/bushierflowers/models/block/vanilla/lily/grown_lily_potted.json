@@ -1,0 +1,7 @@
+{
+  "parent": "bushierflowers:block/base/type2/flower_pot_grown",
+  "textures": {
+    "plant": "minecraft:block/lily_of_the_valley"
+  },
+  "render_type": "cutout"
+}

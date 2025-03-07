@@ -10,5 +10,5 @@ ServerEvents.recipes(event => {
         A: 'create:andesite_alloy',
         B: '#minecraft:planks',
         C: 'create:cogwheel',
-    }).id('kubejs:phys_track')
+    }).id('trackwork:mechanical_crafting/phys_track')
 })

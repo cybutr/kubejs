@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/potted_dandelion",
+  "textures": {
+    "flowerpot": "arts_and_crafts:block/purple_flower_pot"
+  }
+}

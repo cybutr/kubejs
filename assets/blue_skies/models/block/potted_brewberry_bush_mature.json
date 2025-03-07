@@ -1,0 +1,6 @@
+{
+    "parent": "blue_skies:block/flower_pot_cross_turquoise_grass",
+    "textures": {
+        "plant": "blue_skies:block/plants/brewberry_bush_mature_red"
+    }
+}

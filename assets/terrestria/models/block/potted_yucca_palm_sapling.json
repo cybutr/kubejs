@@ -1,0 +1,7 @@
+{
+  "parent": "block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "terrestria:block/yucca_palm_sapling",
+    "dirt": "block/sand"
+  }
+}

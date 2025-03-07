@@ -1,0 +1,7 @@
+{
+	"parent": "block/flower_pot_cross_custom",
+	"textures": {
+		"plant": "promenade:block/palm/sapling",
+		"dirt": "block/sand"
+	}
+}

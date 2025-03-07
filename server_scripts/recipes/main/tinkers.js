@@ -25,6 +25,117 @@ ServerEvents.recipes(event => {
 		"time": 10
 	}).id('kubejs:melting/redstone')
 
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "createbigcannons:nethersteel_nugget" },
+		"result": { "fluid": "createbigcannons:molten_nethersteel", "amount": 10 },
+		"temperature": 900,
+		"time": 1
+	}).id("kubejs:melting/nethersteel_nugget")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "createbigcannons:nethersteel_ingot" },
+		"result": { "fluid": "createbigcannons:molten_nethersteel", "amount": 90 },
+		"temperature": 900,
+		"time": 9
+	}).id("kubejs:melting/nethersteel_ingot")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "createbigcannons:nethersteel_block" },
+		"result": { "fluid": "createbigcannons:molten_nethersteel", "amount": 810 },
+		"temperature": 900,
+		"time": 81
+	}).id("kubejs:melting/nethersteel_block")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "createbigcannons:steel_scrap" },
+		"result": { "fluid": "tfmg:molten_steel", "amount": 10 },
+		"temperature": 800,
+		"time": 9
+	}).id("kubejs:melting/steel_scrap")
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "fmg:steel_ingot" },
+		"result": { "fluid": "tfmg:molten_steel", "amount": 90 },
+		"temperature": 800,
+		"time": 9
+	}).id("kubejs:melting/steel_ingot")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "create_dd:steel_nugget" },
+		"result": { "fluid": "tfmg:molten_steel", "amount": 10 },
+		"temperature": 800,
+		"time": 1
+	}).id("kubejs:melting/steel_nugget")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "create_dd:steel_sheet" },
+		"result": { "fluid": "tfmg:molten_steel", "amount": 90 },
+		"temperature": 800,
+		"time": 9
+	}).id("kubejs:melting/steel_sheet")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "createbigcannons:cast_iron_nugget" },
+		"result": { "fluid": "createbigcannons:molten_cast_iron", "amount": 10 },
+		"temperature": 500,
+		"time": 1
+	}).id("kubejs:melting/cast_iron_nugget")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "tfmg:cast_iron_ingot" },
+		"result": { "fluid": "createbigcannons:molten_cast_iron", "amount": 90 },
+		"temperature": 500,
+		"time": 9
+	}).id("kubejs:melting/cast_iron_ingot")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "tfmg:cast_iron_block" },
+		"result": { "fluid": "createbigcannons:molten_cast_iron", "amount": 810 },
+		"temperature": 500,
+		"time": 81
+	}).id("kubejs:melting/cast_iron_block")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "create_dd:bronze_nugget" },
+		"result": { "fluid": "tconstruct:molten_bronze", "amount": 10 },
+		"temperature": 700,
+		"time": 1
+	}).id("kubejs:melting/bronze_nugget")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "create_dd:bronze_ingot" },
+		"result": { "fluid": "tconstruct:molten_bronze", "amount": 90 },
+		"temperature": 700,
+		"time": 9
+	}).id("kubejs:melting/bronze_ingot")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "create_dd:bronze_sheet" },
+		"result": { "fluid": "tconstruct:molten_bronze", "amount": 90 },
+		"temperature": 700,
+		"time": 9
+	}).id("kubejs:melting/bronze_sheet")
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "create_dd:bronze_block" },
+		"result": { "fluid": "tconstruct:molten_bronze", "amount": 810 },
+		"temperature": 700,
+		"time": 81
+	}).id("kubejs:melting/bronze_block")
+
     event.custom({
 		"type": "tconstruct:alloy",
 		"inputs": [

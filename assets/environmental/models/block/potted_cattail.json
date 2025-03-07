@@ -1,0 +1,7 @@
+{
+    "parent": "block/flower_pot_cross_custom",
+    "textures": {
+        "plant": "environmental:block/cattail_sprouts",
+        "dirt": "block/sand"
+    }
+}

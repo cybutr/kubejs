@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/flower_pot_cross_taiga",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "plant": "biomesoplenty:block/fir_sapling"
+    }
+}

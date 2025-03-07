@@ -1,0 +1,7 @@
+{
+    "parent": "biomesoplenty:block/flower_pot_cross_fungal_jungle",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "plant": "biomesoplenty:block/toadstool"
+    }
+}

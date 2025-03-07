@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_custom",
+  "render_type": "cutout",
+  "textures": {
+    "plant": "infernalexp:block/buried_bone",
+    "dirt": "block/soul_sand"
+  }
+}

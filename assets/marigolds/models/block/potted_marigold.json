@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_plains",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "marigolds:block/marigold"
+  }
+}

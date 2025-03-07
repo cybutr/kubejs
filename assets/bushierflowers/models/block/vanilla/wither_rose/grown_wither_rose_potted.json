@@ -1,0 +1,8 @@
+{
+  "parent": "bushierflowers:block/base/type2/flower_pot_grown",
+  "textures": {
+    "plant": "minecraft:block/wither_rose",
+    "dirt": "minecraft:block/soul_sand"
+  },
+  "render_type": "cutout"
+}

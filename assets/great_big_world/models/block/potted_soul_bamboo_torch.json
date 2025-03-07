@@ -1,0 +1,6 @@
+{
+    "parent": "great_big_world:block/potted_bamboo_torch",
+    "textures": {
+        "bamboo": "great_big_world:block/soul_bamboo_torch_size0"
+    }
+}

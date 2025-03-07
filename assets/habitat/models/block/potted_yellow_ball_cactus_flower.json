@@ -1,0 +1,8 @@
+{
+  "parent": "block/flower_pot_cross_custom",
+  "render_type": "cutout",
+  "textures": {
+    "plant": "habitat:block/potted_yellow_ball_cactus_flower",
+    "dirt": "block/sand"
+  }
+}

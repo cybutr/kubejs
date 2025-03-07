@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_tinted",
+  "textures": {
+	"plant": "wilderwild:block/potted_grass",
+  "dirt": "block/grass_block_top"
+  }
+}

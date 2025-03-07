@@ -1,0 +1,6 @@
+{
+  "parent": "quark:block/potted_pumpkin",
+  "textures": {
+    "plant": "quark:block/potted/melon"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "terrestria:block/redwood_sapling",
+    "dirt": "minecraft:block/podzol_top"
+  }
+}

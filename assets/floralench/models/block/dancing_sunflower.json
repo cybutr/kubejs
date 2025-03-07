@@ -1,0 +1,8 @@
+{
+  "parent": "floralench:block/large_sunflower_pot",
+  "textures": {
+    "6": "floralench:block/dancing_sunflower_front",
+    "8": "floralench:block/dancing_sunflower_bottom",
+    "9": "floralench:block/dancing_sunflower_top"
+  }
+}

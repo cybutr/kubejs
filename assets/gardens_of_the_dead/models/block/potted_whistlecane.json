@@ -1,0 +1,46 @@
+{
+	"credit": "mr_ch0c0late",
+	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"whistlecane": "gardens_of_the_dead:block/potted_whistlecane",
+    "leaf": "gardens_of_the_dead:block/potted_whistlecane",
+    "flowerpot": "block/custom_flower_pot",
+    "particles": "#flowerpot"
+	},
+	"elements": [
+		{
+			"from": [6, 6, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 10, 10], "texture": "#whistlecane"},
+				"east": {"uv": [6, 0, 10, 10], "texture": "#whistlecane"},
+				"south": {"uv": [6, 0, 10, 10], "texture": "#whistlecane"},
+				"west": {"uv": [6, 0, 10, 10], "texture": "#whistlecane"},
+				"up": {"uv": [10, 0, 14, 4], "texture": "#whistlecane", "cullface": "up"}
+			}
+		},
+		{
+			"from": [5, 9, 6],
+			"to": [11, 25, 6],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [5, 9, 6]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 16], "texture": "#leaf"},
+				"south": {"uv": [6, 0, 0, 16], "texture": "#leaf"}
+			}
+		},
+		{
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"faces": {
+				"north": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"east": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"south": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"west": {"uv": [0, 10, 6, 16], "texture": "#flowerpot"},
+				"up": {"uv": [0, 4, 6, 10], "texture": "#flowerpot"},
+				"down": {"uv": [6, 4, 12, 10], "texture": "#flowerpot", "cullface": "down"}
+			}
+		}
+	]
+}

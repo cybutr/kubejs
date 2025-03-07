@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/flower_pot_cross",
+    "textures": {
+        "plant": "blue_skies:block/plants/crescent_fruit_sapling"
+    }
+}

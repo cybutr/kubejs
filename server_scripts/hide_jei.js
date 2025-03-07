@@ -15,11 +15,11 @@
         "tfmg:stator",
         "tfmg:electric_post",
         "tfmg:electric_diode",
-        "tfmg:resistor",
         "tfmg:copper_coil",
         "tfmg:electric_pump",
         "tfmg:diagonal_cable_block",
         "tfmg:cable_tube",
+        "tfmg:transistor",
         "tfmg:neon_tube",
         "tfmg:copper_cable_hub",
         "tfmg:steel_cable_hub",
@@ -37,10 +37,8 @@
         "tfmg:brass_cable_hub",
         "tfmg:segmented_display",
         "tfmg:fuse_block",
-        "tfmg:capacitor",
         "tfmg:accumulator",
         "tfmg:polarizer",
-        "tfmg:transistor",
         "tfmg:converter",
         "tfmg:generator",
         "tfmg:rotor",
@@ -115,5 +113,6 @@
         'create_dd:caramel',
         'create_dd:caramel_milkshake',
         'create_dd:sealed_mechanism',
-        'alexsmobs:squid_grapple'
+        'alexsmobs:squid_grapple',
+        'create_connected:crank_wheel'
     ])})

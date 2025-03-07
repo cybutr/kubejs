@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/potted_oak_sapling",
+  "textures": {
+    "flowerpot": "arts_and_crafts:block/magenta_flower_pot"
+  }
+}

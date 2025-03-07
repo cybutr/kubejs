@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/potted_cactus",
+    "textures": {
+        "plant": "atmospheric:block/potted_snowy_cactus"
+    }
+}
