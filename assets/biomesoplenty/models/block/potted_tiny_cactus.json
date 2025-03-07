@@ -1,0 +1,6 @@
+{
+    "parent": "biomesoplenty:block/flower_pot_cross_dryland",
+    "textures": {
+        "plant": "biomesoplenty:block/tiny_cactus"
+    }
+}

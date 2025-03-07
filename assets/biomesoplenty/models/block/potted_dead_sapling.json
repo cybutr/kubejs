@@ -1,0 +1,7 @@
+{
+    "parent": "biomesoplenty:block/flower_pot_cross_dead_forest",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "plant": "biomesoplenty:block/dead_sapling"
+    }
+}

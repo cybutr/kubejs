@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/flower_pot_cross_custom",
+	"textures": {
+		"plant": "enderscape:block/celestial_growth_potted",
+		"dirt": "enderscape:block/celestial_mycelium_block_top"
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "cinderscapes:block/potted_twilight_tendrils",
+    "dirt": "cinderscapes:block/umbral_nylium"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/potted_azure_bluet",
+  "textures": {
+    "flowerpot": "arts_and_crafts:block/cyan_flower_pot"
+  }
+}

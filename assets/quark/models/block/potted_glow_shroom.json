@@ -1,0 +1,7 @@
+{
+    "parent": "block/flower_pot_cross_custom",
+    "textures": {
+        "plant": "quark:block/glow_shroom",
+        "dirt": "block/deepslate_top"
+    }
+}

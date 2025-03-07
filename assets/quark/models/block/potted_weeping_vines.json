@@ -1,0 +1,7 @@
+{
+    "parent": "quark:block/potted_vine",
+    "textures": {
+        "vines": "block/weeping_vines_plant",
+        "dirt": "block/crimson_nylium"
+    }
+}

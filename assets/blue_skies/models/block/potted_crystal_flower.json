@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/flower_pot_cross_custom",
+    "textures": {
+        "plant": "blue_skies:block/plants/crystal_flower",
+        "dirt": "blue_skies:block/misc/crystal_sand"
+    }
+}

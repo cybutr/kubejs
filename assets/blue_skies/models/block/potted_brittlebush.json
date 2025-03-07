@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/flower_pot_cross_tinted",
+    "textures": {
+        "plant": "blue_skies:block/plants/brittlebush",
+        "dirt": "blue_skies:block/dirt_grass/turquoise_grass_top"
+    }
+}

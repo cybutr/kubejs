@@ -96,4 +96,20 @@ ServerEvents.recipes(event => {
             B: 'kubejs:copper_machine'
         }
     ).id('kubejs:shaped/scorched_alloyer')
+
+    event.shaped(
+        Item.of('brewery:wooden_brewingstation', 1),
+        [
+            '  A',
+            'BCD',
+            'EEE'
+        ],
+        {
+            A: 'create_dd:industrial_iron_ingot',
+            B: 'minecraft:furnace',
+            C: 'minecraft:cauldron',
+            D: 'kubejs:andesite_machine',
+            E: '#minecraft:planks'
+        }
+    ).id('kubejs:shaped/wooden_brewingstation')
 })

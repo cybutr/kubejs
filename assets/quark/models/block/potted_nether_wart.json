@@ -1,0 +1,7 @@
+{
+    "parent": "quark:block/flower_pot_cross_slim",
+    "textures": {
+        "plant": "quark:block/potted/nether_wart",
+        "dirt": "minecraft:block/soul_sand"
+    }
+}

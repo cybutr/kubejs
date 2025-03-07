@@ -1,0 +1,7 @@
+{
+    "parent": "biomesoplenty:block/flower_pot_cross_seasonal_forest",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "plant": "biomesoplenty:block/maple_sapling"
+    }
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "promenade:block/flower_pot_cross_carnelian_treeway",
+	"textures": {
+		"plant": "promenade:block/maple/sapling/sap"
+	}
+}

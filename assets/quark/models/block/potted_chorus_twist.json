@@ -1,0 +1,7 @@
+{
+    "parent": "quark:block/flower_pot_cross_slim",
+    "textures": {
+        "plant": "quark:block/potted/chorus_twist",
+        "dirt": "block/end_stone"
+    }
+}

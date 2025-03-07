@@ -1,0 +1,6 @@
+{
+	"parent": "promenade:block/flower_pot_cross_blush_sakura_grove",
+	"textures": {
+		"plant": "promenade:block/sakura/sapling/cotton"
+	}
+}

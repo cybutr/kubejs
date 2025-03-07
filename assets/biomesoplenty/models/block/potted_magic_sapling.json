@@ -1,0 +1,7 @@
+{
+    "parent": "biomesoplenty:block/flower_pot_cross_mythic_grove",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "plant": "biomesoplenty:block/magic_sapling"
+    }
+}

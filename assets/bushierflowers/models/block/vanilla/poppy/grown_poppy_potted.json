@@ -1,0 +1,7 @@
+{
+  "parent": "bushierflowers:block/base/type2/flower_pot_grown",
+  "textures": {
+    "plant": "minecraft:block/poppy"
+  },
+  "render_type": "cutout"
+}

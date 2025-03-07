@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/potted_cornflower",
+  "textures": {
+    "flowerpot": "arts_and_crafts:block/yellow_flower_pot"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "terrestria:block/tiny_cactus",
+    "dirt": "block/sand"
+  }
+}

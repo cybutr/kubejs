@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_custom",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "aether:block/natural/golden_oak_sapling",
+    "dirt": "aether:block/natural/aether_grass_block_top"
+  }
+}

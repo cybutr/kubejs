@@ -1,0 +1,7 @@
+{
+  "parent": "block/flower_pot_cross_forest",
+  "render_type": "cutout",
+  "textures": {
+    "plant": "habitat:block/one_fairy_ring_mushroom"
+  }
+}

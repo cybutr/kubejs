@@ -1,0 +1,8 @@
+{
+    "parent": "block/flower_pot_cross_custom",
+    "render_type": "cutout",
+    "textures": {
+        "plant": "good_nights_sleep:block/despair_mushroom",
+        "dirt": "good_nights_sleep:block/nightmare_grass_top"
+    }
+}

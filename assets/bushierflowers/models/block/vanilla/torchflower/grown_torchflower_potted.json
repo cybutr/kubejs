@@ -1,0 +1,7 @@
+{
+  "parent": "bushierflowers:block/base/type1/flower_pot_grown",
+  "textures": {
+    "plant": "minecraft:block/torchflower"
+  },
+  "render_type": "cutout"
+}

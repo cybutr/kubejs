@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/flower_pot_cross_custom",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "plant": "biomesoplenty:block/redwood_sapling",
+        "dirt": "block/podzol_top"
+    }
+}

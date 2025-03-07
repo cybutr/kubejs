@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/potted_red_tulip",
+  "textures": {
+    "flowerpot": "arts_and_crafts:block/blue_flower_pot"
+  }
+}

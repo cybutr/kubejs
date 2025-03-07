@@ -1,0 +1,6 @@
+{
+  "parent": "environmental:block/flower_pot_cross_pine_barrens",
+  "textures": {
+    "plant": "environmental:block/pine_sapling"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_tinted",
+  "textures": {
+    "plant": "great_big_world:block/tropical_fern",
+    "dirt": "block/grass_block_top"
+  }
+}

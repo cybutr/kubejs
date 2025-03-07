@@ -1,0 +1,6 @@
+{
+  "parent": "wondrouswilds:block/potted_violet",
+  "textures": {
+    "violet": "wondrouswilds:block/red_violet"
+  }
+}

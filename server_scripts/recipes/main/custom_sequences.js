@@ -287,11 +287,9 @@
     ServerEvents.recipes(event => {
         new SequencedAssembly(
             event,
-            'tfmg:heavy_machinery_casing',
-            'kubejs:tsteel_machine'
+            'tfmg:heavy_machinery_casing'
             )
             .custom('Next: Mix in a mixer', (pre, post) => {
-                event.recipes.create.mixing(post, [pre, 'kubejs:brass_machine'])
-            })
-            .outputs('1x kubejs:tsteel_machine')
+                event.recipes.create.mixing(post, [pre, 'kubejs:brass_machine']).heated().id('kubejs:sequenced_assembly/tsteel_machine/mixing')
+            }).outputs('1x kubejs:tsteel_machine')
     })

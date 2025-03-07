@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_custom",
+  "textures": {
+    "plant": "minecraft:block/crimson_fungus",
+    "dirt": "minecraft:block/crimson_nylium"
+  }
+}

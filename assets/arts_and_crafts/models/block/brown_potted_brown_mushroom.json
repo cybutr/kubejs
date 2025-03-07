@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/potted_brown_mushroom",
+  "textures": {
+    "flowerpot": "arts_and_crafts:block/brown_flower_pot"
+  }
+}

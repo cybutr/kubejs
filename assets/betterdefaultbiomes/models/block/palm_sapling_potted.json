@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/flower_pot_cross_custom",
+    "textures": {
+        "plant": "betterdefaultbiomes:block/palm_sapling",
+        "dirt": "minecraft:block/sand"
+    }
+}

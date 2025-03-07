@@ -1,0 +1,7 @@
+{
+    "parent": "block/flower_pot_cross_custom",
+    "textures": {
+        "plant": "endergetic:block/tall_poise_bush_pot",
+        "dirt": "endergetic:block/poismoss_top"
+    }
+}

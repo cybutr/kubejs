@@ -1,0 +1,7 @@
+{
+    "parent": "blue_skies:block/tinted_flower_pot_cross_overlay",
+    "textures": {
+        "plant": "blue_skies:block/plants/potted_chillweed",
+        "overlay": "blue_skies:block/plants/potted_chillweed_overlay"
+    }
+}

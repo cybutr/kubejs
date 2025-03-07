@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_pot_cross_taiga",
+  "textures": {
+    "plant": "neapolitan:block/potted_mint"
+  }
+}

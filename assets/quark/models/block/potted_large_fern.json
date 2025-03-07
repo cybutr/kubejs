@@ -1,0 +1,7 @@
+{
+    "parent": "block/flower_pot_cross_tinted",
+    "textures": {
+        "plant": "block/large_fern_top",
+        "dirt": "block/grass_block_top"
+    }
+}

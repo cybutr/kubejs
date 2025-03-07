@@ -1,0 +1,6 @@
+{
+  "parent": "paradise_lost:block/flower_pot_cross_highlands",
+  "textures": {
+    "plant": "paradise_lost:block/mother_aurel_sapling"
+  }
+}

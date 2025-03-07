@@ -1,0 +1,6 @@
+{
+  "parent": "floralis:block/template_potted_flower",
+  "textures": {
+  	"plant": "floralis:block/purple_flower"
+  }
+}

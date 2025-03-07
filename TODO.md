@@ -1,15 +1,17 @@
 # Create Mod Progression Guide
 
 ## 1. Andesite Age
-- [ ] Done
-- [ ] Andesite Machine - Manual
-- [ ] Andesite Machine - Sequence
-- [ ] Andesite Age Machines
+- [X] Done
+- [X] Andesite Machine - Manual
+- [X] Andesite Machine - Sequence
+- [X] Andesite Age Machines
 ## 2. Copper Age
-- [ ] Done
-- [ ] Copper Machine - Sequence
-- [ ] Copper Age Machines
+- [X] Done
+- [X] Copper Machine - Sequence
+- [X] Copper Age Machines
 ## 3. Brass Age
-- [ ] Done
+- [X] Done
 ## 4. Steel Age
 - [ ] Done
+## Others
+- Connected

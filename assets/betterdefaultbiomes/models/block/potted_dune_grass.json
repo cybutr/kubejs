@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/flower_pot_cross_custom",
+    "textures": {
+        "plant": "betterdefaultbiomes:block/dune_grass",
+        "dirt": "minecraft:block/sand"
+    }
+}

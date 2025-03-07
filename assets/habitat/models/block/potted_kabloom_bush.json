@@ -1,0 +1,7 @@
+{
+  "parent": "block/flower_pot_cross_plains",
+  "render_type": "cutout",
+  "textures": {
+    "plant": "habitat:block/potted_kabloom_bush"
+  }
+}

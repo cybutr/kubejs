@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         {
             A: '#forge:stone',
             B: 'minecraft:quartz_block',
-            C: 'kubejs:brass_machine',
+            C: 'kubejs:copper_machine',
             D: '#functionalstorage:drawer',
             E: 'create:linked_controller'
         }
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
             A: '#forge:stone',
             B: 'minecraft:quartz_block',
             C: '#functionalstorage:drawer',
-            D: 'kubejs:brass_machine',
+            D: 'kubejs:copper_machine',
             E: 'create:linked_controller'
         }
     ).id('kubejs:shaped/storage_controller')
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
             A: 'minecraft:iron_nugget',
             B: 'minecraft:quartz_block',
             C: '#functionalstorage:drawer',
-            D: 'kubejs:brass_machine',
+            D: 'kubejs:copper_machine',
             E: 'create:linked_controller'
         }
     ).id('kubejs:shaped/framed_storage_controller')
@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
         {
             A: 'minecraft:iron_nugget',
             B: 'minecraft:quartz_block',
-            C: 'kubejs:brass_machine',
+            C: 'kubejs:copper_machine',
             D: '#functionalstorage:drawer',
             E: 'create:linked_controller'
         }
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
         {
             A: 'minecraft:paper',
             B: 'tfmg:aluminum_ingot',
-            C: 'kubejs:copper_machine',
+            C: 'kubejs:andesite_machine',
             D: 'minecraft:emerald',
             E: '#forge:screwdrivers'
         }

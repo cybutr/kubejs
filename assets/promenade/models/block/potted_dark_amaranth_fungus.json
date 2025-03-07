@@ -1,0 +1,7 @@
+{
+	"parent": "block/flower_pot_cross_custom",
+	"textures": {
+		"plant": "promenade:block/dark_amaranth_fungus",
+		"dirt": "promenade:block/black_dylium/top"
+	}
+}
