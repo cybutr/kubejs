@@ -1,4 +1,4 @@
 ServerEvents.recipes(event => {
-    event.recipes.create.mixing(Fluid.of('kubejs:caustic_solution', 375),
-    [Fluid.water(250), Fluid.of('kubejs:molten_redstone', 125), 'minecraft:blaze_powder']).id('kubejs:mixing/caustic_solution')
+    event.recipes.create.mixing(Fluid.of('kubejs:caustic_solution', 360),
+    [Fluid.water(270), Fluid.of('kubejs:molten_redstone', 135), 'minecraft:blaze_powder']).id('kubejs:mixing/caustic_solution')
 })

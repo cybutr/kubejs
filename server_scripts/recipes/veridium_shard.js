@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     Item.of('kubejs:obsidian_alloy'),
         [
         event.recipes.createDeploying(inter, [inter, 'create:copper_nugget']),
-        event.recipes.createFilling(inter, [inter, Fluid.of('kubejs:azurite_acid', 150)]),
+        event.recipes.createFilling(inter, [inter, Fluid.of('kubejs:azurite_acid', 135)]),
         event.recipes.createCutting(inter, inter),
         event.recipes.createDeploying(inter, [inter, 'minecraft:amethyst_shard']),
         event.recipes.createPressing(inter, inter)

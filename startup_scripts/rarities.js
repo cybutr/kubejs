@@ -14,18 +14,48 @@ function createRarity (/** @type {string} */ name, /** @type {number} */ colorCo
     createRarity("andesite", 0xac9c86)
     createRarity("copper", 0xb87333)
     createRarity("steel", 0x896f6f)
+    createRarity("blazing", 0xe95813)
     ItemEvents.modification((event) => {
 
-    event.modify("kubejs:brass_machine", (item) => {
-        item.rarity = "brass"
+    // Lists of item IDs per rarity
+    let brassItems = ["kubejs:brass_machine"]
+    let andesiteItems = ["kubejs:andesite_machine"]
+    let copperItems = ["kubejs:copper_machine"]
+    let steelItems = ["kubejs:steel_machine"]
+    let blazingItems = ["kubejs:blazing_machine"]
+
+    // Apply brass rarity to all brass items
+    brassItems.forEach((id) => {
+        event.modify(id, (item) => {
+            item.rarity = "brass"
+        })
     })
-    event.modify("kubejs:andesite_machine", (item) => {
-        item.rarity = "andesite"
+
+    // Apply andesite rarity to all andesite items
+    andesiteItems.forEach((id) => {
+        event.modify(id, (item) => {
+            item.rarity = "andesite"
+        })
     })
-    event.modify("kubejs:copper_machine", (item) => {
-        item.rarity = "copper"
+
+    // Apply copper rarity to all copper items
+    copperItems.forEach((id) => {
+        event.modify(id, (item) => {
+            item.rarity = "copper"
+        })
     })
-    event.modify("kubejs:steel_machine", (item) => {
-        item.rarity = "steel"
+
+    // Apply steel rarity to all steel items
+    steelItems.forEach((id) => {
+        event.modify(id, (item) => {
+            item.rarity = "steel"
+        })
+    })
+
+    // Apply blazing rarity to all blazing items
+    blazingItems.forEach((id) => {
+        event.modify(id, (item) => {
+            item.rarity = "blazing"
+        })
     })
 })

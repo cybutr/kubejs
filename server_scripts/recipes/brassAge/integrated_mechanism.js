@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    let inter = Item.of('create:brass_sheet')
+    let inter = Item.of('create_dd:incomplete_integrated_mechanism')
     event.recipes.create.sequenced_assembly('create_dd:integrated_mechanism', 'create:brass_sheet',
         [event.recipes.create.deploying(inter, [inter, 'create_dd:integrated_circuit']),
         event.recipes.create.deploying(inter, [inter, 'create:electron_tube']),

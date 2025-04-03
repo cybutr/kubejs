@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:shaped/saw')
 
     event.shaped(
-        Item.of('kubejs:screwdriver', 1),
+        Item.of('tfmg:screwdriver', 1),
         [
             '   ',
             'ABC',

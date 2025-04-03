@@ -2,6 +2,7 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:anuggets', ['minecraft:iron_nugget', 'create:zinc_nugget'])
     event.add('kubejs:aingots', ['minecraft:iron_ingot', 'create:zinc_ingot'])
     event.add('kubejs:balloon_mat', ['minecraft:leather', 'minecraft:paper', 'tfmg:synthetic_leather'])
+    event.add('kubejs:limestones', ['create:limestone', 'create_dd:weathered_limestone'])
     event.add('forge:saws', 'kubejs:saw')
     event.add('forge:screwdrivers', ['kubejs:screwdriver', 'tfmg:screwdriver'])
     event.remove('forge:ingots/steel', ['create_dd:steel_ingot', 'createnuclear:steel_ingot', 'tconstruct:steel_ingot'])
@@ -15,11 +16,14 @@ ServerEvents.tags('item', event => {
     event.remove('c:nuggets/steel', ['createnuclear:steel_nugget', 'tconstruct:steel_nugget'])
     event.remove('createbigcannons:sheet_steel', 'create_dd:sheet_steel')
     event.removeAllTagsFrom(['createbigcannons:cast_iron_ingot', 'createdeco:industrial_iron_ingot', 'createnuclear:steel_nugget', 'tconstruct:steel_nugget', 'create_dd:sheet_steel', 
-        'createbigcannons:steel_block', 'tconstruct:steel_block', 'createbigcannons:molten_steel', 'tconstruct:molten_steel'])
+        'createbigcannons:steel_block', 'tconstruct:steel_block', 'createbigcannons:molten_steel', 'tconstruct:molten_steel', 'incubation:fried_egg', 'naturalist:cooked_egg'])
 })
 ServerEvents.tags('blocks', event => {
     event.remove('createbigcannons:block_steel', ['createbigcannons:steel_block', 'tconstruct:steel_block', 'createbigcannons:molten_bronze'])
-})
+    event.add('create:fan_processing_catalysts/blasting', 'createaddition:liquid_blaze_burner')
+    event.add('create:fan_processing_catalysts/smoking', 'createaddition:liquid_blaze_burner')
+    event.add('create_dd:fan_processing_catalysts/seething', 'createaddition:liquid_blaze_burner')
+}) 
 ServerEvents.tags('fluids', event => {
     event.remove('forge:molten_bronze', 'createbigcannons:molten_bronze')
     event.remove('forge:molten_steel', ['createbigcannons:molten_steel', 'tconstruct:molten_steel'])

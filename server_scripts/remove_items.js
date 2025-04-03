@@ -1,4 +1,6 @@
-let bannedItems = ['minecraft:elytra'];
+let bannedItems = [
+  'minecraft:elytra'
+]
 bannedItems.forEach(item => {
   PlayerEvents.inventoryChanged(item, event => {
     event.player.tell([
@@ -7,7 +9,7 @@ bannedItems.forEach(item => {
         " has been ",
         Text.red("removed"),
       ]);
-    event.player.inventory.removeItem(event.getSlot(), event.item.count);
+    event.player.inventory.removeItem(event.getSlot(), event.item.count)
     event.player.inventory.clear(item);
   })
 })

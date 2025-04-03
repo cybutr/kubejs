@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             'EEE'
         ],
         {
-            A: 'createbigcannons:cast_iron_autocannon_breech',
+            A: 'tfmg:cast_iron_pipe',
             B: '#forge:saws',
             C: 'kubejs:andesite_machine',
             D: '#forge:screwdrivers',

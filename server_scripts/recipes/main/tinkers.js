@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 			"fluid": 'kubejs:molten_redstone',
 			"amount": 900
 		},
-		"temperature": 500,
+		"temperature": 540,
 		"time": 90
 	}).id('kubejs:melting/redstone_block')
 
@@ -19,9 +19,9 @@ ServerEvents.recipes(event => {
 		},
 		"result": {
 			"fluid": 'kubejs:molten_redstone',
-			"amount": 100
+			"amount": 90
 		},
-		"temperature": 500,
+		"temperature": 540,
 		"time": 10
 	}).id('kubejs:melting/redstone')
 
@@ -46,21 +46,21 @@ ServerEvents.recipes(event => {
 		"ingredient": { "item": "createbigcannons:nethersteel_block" },
 		"result": { "fluid": "createbigcannons:molten_nethersteel", "amount": 810 },
 		"temperature": 900,
-		"time": 81
+		"time": 90
 	}).id("kubejs:melting/nethersteel_block")
 
 	event.custom({
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "createbigcannons:steel_scrap" },
 		"result": { "fluid": "tfmg:molten_steel", "amount": 10 },
-		"temperature": 800,
+		"temperature": 810,
 		"time": 9
 	}).id("kubejs:melting/steel_scrap")
 	event.custom({
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "fmg:steel_ingot" },
 		"result": { "fluid": "tfmg:molten_steel", "amount": 90 },
-		"temperature": 800,
+		"temperature": 810,
 		"time": 9
 	}).id("kubejs:melting/steel_ingot")
 
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "create_dd:steel_nugget" },
 		"result": { "fluid": "tfmg:molten_steel", "amount": 10 },
-		"temperature": 800,
+		"temperature": 810,
 		"time": 1
 	}).id("kubejs:melting/steel_nugget")
 
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "create_dd:steel_sheet" },
 		"result": { "fluid": "tfmg:molten_steel", "amount": 90 },
-		"temperature": 800,
+		"temperature": 810,
 		"time": 9
 	}).id("kubejs:melting/steel_sheet")
 
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "createbigcannons:cast_iron_nugget" },
 		"result": { "fluid": "createbigcannons:molten_cast_iron", "amount": 10 },
-		"temperature": 500,
+		"temperature": 540,
 		"time": 1
 	}).id("kubejs:melting/cast_iron_nugget")
 
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "tfmg:cast_iron_ingot" },
 		"result": { "fluid": "createbigcannons:molten_cast_iron", "amount": 90 },
-		"temperature": 500,
+		"temperature": 540,
 		"time": 9
 	}).id("kubejs:melting/cast_iron_ingot")
 
@@ -100,15 +100,15 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "tfmg:cast_iron_block" },
 		"result": { "fluid": "createbigcannons:molten_cast_iron", "amount": 810 },
-		"temperature": 500,
-		"time": 81
+		"temperature": 540,
+		"time": 90
 	}).id("kubejs:melting/cast_iron_block")
 
 	event.custom({
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "create_dd:bronze_nugget" },
 		"result": { "fluid": "tconstruct:molten_bronze", "amount": 10 },
-		"temperature": 700,
+		"temperature": 720,
 		"time": 1
 	}).id("kubejs:melting/bronze_nugget")
 
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "create_dd:bronze_ingot" },
 		"result": { "fluid": "tconstruct:molten_bronze", "amount": 90 },
-		"temperature": 700,
+		"temperature": 720,
 		"time": 9
 	}).id("kubejs:melting/bronze_ingot")
 
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "create_dd:bronze_sheet" },
 		"result": { "fluid": "tconstruct:molten_bronze", "amount": 90 },
-		"temperature": 700,
+		"temperature": 720,
 		"time": 9
 	}).id("kubejs:melting/bronze_sheet")
 
@@ -132,8 +132,8 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting",
 		"ingredient": { "item": "create_dd:bronze_block" },
 		"result": { "fluid": "tconstruct:molten_bronze", "amount": 810 },
-		"temperature": 700,
-		"time": 81
+		"temperature": 720,
+		"time": 90
 	}).id("kubejs:melting/bronze_block")
 
     event.custom({
@@ -146,8 +146,8 @@ ServerEvents.recipes(event => {
 			"fluid": 'tconstruct:molten_brass',
 			"amount": 270
 		},
-		"temperature": 400,
-		"time": 80
+		"temperature": 360,
+		"time": 90
 	}).id('kubejs:alloy/brass')
 
     event.custom({
@@ -161,17 +161,17 @@ ServerEvents.recipes(event => {
 			"amount": 270
 		},
 		"temperature": 1800,
-		"time": 210
+		"time": 180
 	}).id('kubejs:alloy/manyullyn')
     
     event.custom({
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:cooling_fluid",
-			"amount": 300
+			"amount": 270
 		},
-		"duration": 100,
-		"temperature": -200,
+		"duration": 90,
+		"temperature": -180,
 		"rate": 8
 	})
 
@@ -179,10 +179,10 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "createaddition:bioethanol",
-			"amount": 350
+			"amount": 360
 		},
-		"duration": 500,
-		"temperature": 1500,
+		"duration": 540,
+		"temperature": 1530,
 		"rate": 12
 	})
 
@@ -190,10 +190,10 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:kerosene",
-			"amount": 200
+			"amount": 180
 		},
-		"duration": 650,
-		"temperature": 1200,
+		"duration": 630,
+		"temperature": 1170,
 		"rate": 12
 	})
 
@@ -201,10 +201,10 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:lpg",
-			"amount": 250
+			"amount": 270
 		},
-		"duration": 400,
-		"temperature": 800,
+		"duration": 360,
+		"temperature": 810,
 		"rate": 10
 	})
 
@@ -212,10 +212,10 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:gasoline",
-			"amount": 300
+			"amount": 270
 		},
-		"duration": 300,
-		"temperature": 1400,
+		"duration": 270,
+		"temperature": 1440,
 		"rate": 13
 	})
 
@@ -223,10 +223,10 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:diesel",
-			"amount": 400
+			"amount": 360
 		},
-		"duration": 200,
-		"temperature": 800,
+		"duration": 180,
+		"temperature": 810,
 		"rate": 11
 	})
 
@@ -234,10 +234,10 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:propane",
-			"amount": 500
+			"amount": 540
 		},
-		"duration": 550,
-		"temperature": 1900,
+		"duration": 540,
+		"temperature": 1890,
 		"rate": 17
 	})
 
@@ -245,10 +245,10 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:creosote",
-			"amount": 300
+			"amount": 270
 		},
-		"duration": 400,
-		"temperature": 1200,
+		"duration": 360,
+		"temperature": 1170,
 		"rate": 11
 	})
 	
@@ -256,9 +256,9 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:napalm",
-			"amount": 250
+			"amount": 270
 		},
-		"duration": 350,
+		"duration": 360,
 		"temperature": 1800,
 		"rate": 14
 	})
@@ -267,10 +267,239 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:melting_fuel",
 		"fluid": {
 			"name": "tfmg:naphtha",
-			"amount": 300
+			"amount": 400
 		},
-		"duration": 300,
-		"temperature": 1300,
+		"duration": 470,
+		"temperature": 1260,
 		"rate": 10
 	})
+	let TCON = 'tconstruct'
+	event.custom({
+        "type": "tconstruct:entity_melting",
+        "entity": {
+            "type": "minecraft:bee"
+        },
+        "result": {
+            "fluid": "create:honey",
+            "amount": 25
+        },
+        "damage": 2
+    }).id(TCON + ':smeltery/entity_melting/bee')
+    event.custom({
+        "type": "tconstruct:melting",
+        "ingredient": {
+            "item": "minecraft:honey_block"
+        },
+        "result": {
+            "fluid": "create:honey",
+            "amount": 1000
+        },
+        "temperature": 1,
+        "time": 94
+    }).id(TCON + ':smeltery/melting/slime/honey_block')
+	let orestones = [
+		['veridium', 'tconstruct:molten_copper', 'create'],
+		['asurine', 'tconstruct:molten_zinc', 'create'],
+		['crimsite', 'tconstruct:molten_iron', 'create'],
+		['ochrum', 'tconstruct:molten_gold', 'create'],
+		['bauxite', 'tconstruct:molten_aluminum', 'tfmg'],
+		['galena', 'tconstruct:molten_lead', 'tfmg']
+	]
+	let h = 40
+	let temperature = 800
+	let time = 400
+	// Pre-calculate time variations
+	let stairsTime = time * 0.75
+	let wallTime = time * (2/3)
+	let slabTime = time * 0.5
+
+	orestones.forEach(i => {
+		let prefix = i[2] || 'create';
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':' + i[0]
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": time
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':cut_' + i[0]
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": time
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':cut_' + i[0] + "_stairs"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": stairsTime
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':cut_' + i[0] + "_wall"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": wallTime
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':polished_cut_' + i[0]
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": time
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':polished_cut_' + i[0] + "_stairs"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": stairsTime
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':polished_cut_' + i[0] + "_wall"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": wallTime
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':small_' + i[0] + "_bricks"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": time
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':small_' + i[0] + "_brick_stairs"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": stairsTime
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':small_' + i[0] + "_brick_wall"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": wallTime
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':layered_' + i[0]
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": time
+		});
+		
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':' + i[0] + "_pillar"
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": time
+		});
+		
+		// Add slab variant for every orestone.
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": {
+				"item": prefix + ':slab_' + i[0]
+			},
+			"result": {
+				"fluid": i[1],
+				"amount": h
+			},
+			"temperature": temperature,
+			"time": slabTime
+		});
+		
+		// Only add the mossy variant for the specified orestones using the create_dd prefix.
+		if (['veridium', 'asurine', 'crimsite', 'ochrum'].includes(i[0])) {
+			event.custom({
+				"type": "tconstruct:melting",
+				"ingredient": {
+					"item": "create_dd:mossy_" + i[0]
+				},
+				"result": {
+					"fluid": i[1],
+					"amount": h
+				},
+				"temperature": temperature,
+				"time": time
+			});
+		}
+	});
 })

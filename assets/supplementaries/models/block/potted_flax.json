@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/flower_pot_cross_custom",
-	"textures": {
-		"plant": "supplementaries:block/flax_pot",
-		"dirt": "block/sand"
-	}
-}

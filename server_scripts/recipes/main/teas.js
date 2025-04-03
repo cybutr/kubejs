@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         ],
         "heat_needed": [
             {
-            "amount": 50
+            "amount": 45
             }
         ],
         "ingredients": [

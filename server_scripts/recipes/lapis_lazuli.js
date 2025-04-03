@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     ], Item.of('kubejs:lapis_lazuli_catalyst'), [
         event.recipes.createCutting(inter, inter),
         event.recipes.createDeploying(inter, [inter, 'minecraft:quartz']),
-        event.recipes.createFilling(inter, [inter, Fluid.of('minecraft:water', 350)]),
+        event.recipes.createFilling(inter, [inter, Fluid.of('minecraft:water', 360)]),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(1).id('kubejs:sequence/lapis_lazuli')
 })

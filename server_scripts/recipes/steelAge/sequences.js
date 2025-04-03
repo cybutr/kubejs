@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying(interTurbine, [interTurbine, Ingredient.of('tfmg:turbine_blade')]),
             event.recipes.create.deploying(interTurbine, [interTurbine, Ingredient.of('tfmg:screw')]),
             event.recipes.create.deploying(interTurbine, [interTurbine, Ingredient.of('#forge:screwdrivers')]),
-            event.recipes.create.filling(interTurbine, [interTurbine, Fluid.of('tfmg:lubrication_oil', 1000)]),
+            event.recipes.create.filling(interTurbine, [interTurbine, Fluid.of('tfmg:lubrication_oil', 990)]),
             event.recipes.create.deploying(interTurbine, [interTurbine, Ingredient.of('tfmg:steel_mechanism')])
         ]
     )
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying(interLpg, [interLpg, Ingredient.of('tfmg:engine_chamber')]),
             event.recipes.create.deploying(interLpg, [interLpg, Ingredient.of('tfmg:screw')]),
             event.recipes.create.deploying(interLpg, [interLpg, Ingredient.of('#forge:screwdrivers')]),
-            event.recipes.create.filling(interLpg, [interLpg, Fluid.of('tfmg:lubrication_oil', 1000)])
+            event.recipes.create.filling(interLpg, [interLpg, Fluid.of('tfmg:lubrication_oil', 990)])
         ]
     )
     .transitionalItem(interLpg)
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         ],
         Ingredient.of('tfmg:engine_base'),
         [
-            event.recipes.create.filling(interGas, [interGas, Fluid.of('tfmg:lubrication_oil', 1000)]),
+            event.recipes.create.filling(interGas, [interGas, Fluid.of('tfmg:lubrication_oil', 990)]),
             event.recipes.create.deploying(interGas, [interGas, Ingredient.of('tfmg:engine_chamber')]),
             event.recipes.create.deploying(interGas, [interGas, Ingredient.of('tfmg:screw')]),
             event.recipes.create.deploying(interGas, [interGas, Ingredient.of('#forge:screwdrivers')])

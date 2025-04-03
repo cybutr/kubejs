@@ -44,8 +44,7 @@ StartupEvents.registry('fluid', event => {
     event.create('purified_water')
     .thinTexture(0x82bfde)
     .bucketColor(0x82bfde)
-    .displayName('Purified Water')
-    .noBlock()
+    .displayName('Purified Water').flowingTexture('minecraft:block/water_flow').stillTexture('minecraft:block/water_still').tag('minecraft:water')
     .bucketItem.modelJson({
         "parent": "minecraft:item/generated",
         "textures": {
@@ -56,8 +55,7 @@ StartupEvents.registry('fluid', event => {
     event.create('enriched_water')
     .thinTexture(0xd2e1e3)
     .bucketColor(0xd2e1e3)
-    .displayName('Enriched Water')
-    .noBlock()
+    .displayName('Enriched Water').flowingTexture('minecraft:block/water_flow').stillTexture('minecraft:block/water_still').tag('minecraft:water')
     .bucketItem.modelJson({
         "parent": "minecraft:item/generated",
         "textures": {
@@ -68,7 +66,7 @@ StartupEvents.registry('fluid', event => {
     event.create('glow_solution')
     .thinTexture(0xfaf478)
     .bucketColor(0xfaf478)
-    .displayName('Glow Solution')
+    .displayName('Glow Solution').flowingTexture('minecraft:block/water_flow').stillTexture('minecraft:block/water_still').tag('minecraft:lava')
     .bucketItem.modelJson({
         "parent": "minecraft:item/generated",
         "textures": {
@@ -92,24 +90,6 @@ StartupEvents.registry('fluid', event => {
         "parent": "minecraft:item/generated",
         "textures": {
             "layer0": "kubejs:item/molten_redstone_bucket"
-        }
-    })
-
-    event.create('skibidi_fluid')
-    .thinTexture(0x9650f)
-    .bucketColor(0x9650f)
-    .displayName('Skibidi Fluid')
-    .noBucket()
-
-    event.create('cum')
-    .thinTexture(0xececd8)
-    .bucketColor(0xececd8)
-    .displayName('Cum')
-    .noBlock()
-    .bucketItem.modelJson({
-        "parent": "minecraft:item/generated",
-        "textures": {
-            "layer0": "kubejs:item/cum_bucket"
         }
     })
 

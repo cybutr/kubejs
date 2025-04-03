@@ -22,37 +22,14 @@ StartupEvents.registry('item', event => {
 	event.create("andesite_machine").tooltip("Used to make basic machines for create").displayName("Andesite Machine").parentModel("kubejs:item/andesite_machine")
 	event.create("brass_machine").tooltip("Used to make mid game stuff such as steam engines").displayName("Brass Machine").parentModel("kubejs:item/brass_machine")
 	event.create("steel_machine").tooltip("Used to make heavy machinery such as a pumpjack").displayName("Steel Machine").parentModel("kubejs:item/steel_machine")
-	event.create("tsteel_machine").tooltip("Used to make heavy machinery such as a pumpjack").displayName("Incomplete Steel Machine").parentModel("kubejs:item/steel_machine")
+	// event.create("tsteel_machine").tooltip("A steel machine that is missing a few parts").displayName("Incomplete Steel Machine").parentModel("kubejs:item/steel_machine")
+	event.create("blazing_machine").tooltip("Used to make controllers for large smelteries and foundries").displayName("Blazing Machine").parentModel("kubejs:item/blazing_machine")
 	event.create("motherboard").displayName("Motherboard").texture("kubejs:item/motherboard")
 	event.create("graphics_unit").displayName("Graphics Unit").texture("kubejs:item/graphics_unit")
 	event.create("hard_drive").displayName("Hard Drive").texture("kubejs:item/hard_drive")
 	event.create("incomplete_computer").tooltip("A computer that is missing a few parts").displayName("Incomplete Computer").parentModel("kubejs:item/incomplete_computer")
 	event.create("nickel_tube").displayName("Nickel Tube").texture("kubejs:item/nickel_tube")
 	tool('Saw')
-	tool('Screwdriver')
 	event.create('drill_head').displayName('Drill Head').texture('kubejs:item/drill_head')
 	event.create('saw_blade').displayName('Saw Blade').texture('kubejs:item/saw_blade')
-	event.create('fortrens').food(food => 
-		food
-		.hunger(12)
-		.saturation(5)
-		.effect('minecraft:nausea', 600, 0, 1)
-		.alwaysEdible()
-		.meat()
-		.eaten(ctx => {
-		})
-	).displayName("Fortrens's Dildo").texture('kubejs:item/fortrens').tooltip("Fortens's long lost dildo").use((level, player, hand) => true).releaseUsing((itemstack, level, entity, tick) => {
-		itemstack.shrink(1)
-		level.createExplosion(entity.x, entity.y, entity.z).explode()
-	})
-	event.create('cum_bottle').food(food => 
-		food
-		.hunger(1)
-		.saturation(2)
-		.effect('kubejs:pregnant', 450, 0, 1)
-		.alwaysEdible()
-		.eaten(ctx => {
-			ctx.player.give("minecraft:glass_bottle")
-		})
-	).useAnimation("drink").displayName("Cum Bottle").texture('kubejs:item/cum_bottle').tooltip("A fresh load of cum")
 })

@@ -1,4 +1,4 @@
-PlayerEvents.tick(e => {
+/* PlayerEvents.tick(e => {
     const { player } = e;
 
     // Reset logic if effect is not active
@@ -30,11 +30,6 @@ PlayerEvents.tick(e => {
 function hpModifierCalc(player,amplifier){
     return Math.min(1+amplifier*2,player.getAttributeBaseValue("minecraft:generic.max_health")-1)
 }
-PlayerEvents.tick(e => {
-    if(e.player.age % 20) return;
-    if(e.player.mainHandItem.id != 'kubejs:fortrens') return;
-    e.player.potionEffects.add('kubejs:erection', 20, 2, true, false);
-})
 
 /* let $ServerPlayer = Java.loadClass("net.minecraft.server.level.ServerPlayer");
 let $PlayerWakeUpEvent = Java.loadClass("net.forge.forge.event.entity.player.PlayerWakeUpEvent");
@@ -46,3 +41,17 @@ ForgeEvents.onEvent($PlayerWakeUpEvent, event => {
         player.potionEffects.add('minecraft:speed', 12000, 0, false, true)
     }
 }) */
+// List of block ids to check
+const blockIds = ['minecraft:tall_grass', 'upgrade_aquatic:tall_beachgrass', 'tconstruct:earth_slime_tall_grass', 'tconstruct:sky_slime_tall_grass', 'tconstruct:blood_slime_tall_grass', 'tconstruct:ender_slime_tall_grass']
+
+PlayerEvents.tick((event) => {
+    const { player } = event;
+    
+    if (player.shiftKeyDown && blockIds.includes(player.block.id)) {
+        if (!player.hasEffect("invisibility")) {
+            player.potionEffects.add("invisibility", -1, 0, false, false);
+        }
+    } else {
+        player.removeEffect("invisibility");
+    }
+});
