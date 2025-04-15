@@ -32,4 +32,8 @@ StartupEvents.registry('item', event => {
 	tool('Saw')
 	event.create('drill_head').displayName('Drill Head').texture('kubejs:item/drill_head')
 	event.create('saw_blade').displayName('Saw Blade').texture('kubejs:item/saw_blade')
+
+	event.create('andesite_upgrade_smithing_template').displayName('Smithing Template').texture('kubejs:item/andesite_upgrade_smithing_template')
+	event.create('brass_upgrade_smithing_template').displayName('Smithing Template').texture('kubejs:item/brass_upgrade_smithing_template')
+	event.create('copper_upgrade_smithing_template').displayName('Smithing Template').texture('kubejs:item/copper_upgrade_smithing_template')
 })

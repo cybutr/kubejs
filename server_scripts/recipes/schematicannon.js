@@ -14,5 +14,5 @@ ServerEvents.recipes(event => {
             E: 'create_dd:andesite_sheet',
             F: 'create_dd:inductive_mechanism'
         }
-    )
+    ).damageIngredient('#forge:saws', '5').damageIngredient('#forge:screwdrivers', '5').id('create:schematicannon')
 })

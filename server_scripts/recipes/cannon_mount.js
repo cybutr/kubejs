@@ -15,5 +15,5 @@ ServerEvents.recipes(event => {
             F: 'create:shaft',
             G: 'create:vertical_gearbox'
         }
-    ).id('createbigcannons:cannon_mount')
+    ).damageIngredient('#forge:saws', '5').damageIngredient('#forge:screwdrivers', '5').id('createbigcannons:cannon_mount')
 })

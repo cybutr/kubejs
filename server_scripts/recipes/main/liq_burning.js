@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
             "fluidTag": "forge:kerosene",
             "amount": 1000
         },
-        "burnTime": 5400,
+        "burnTime": 54000,
         "superheated": true,
         "conditions": [
             {
@@ -26,38 +26,6 @@ ServerEvents.recipes(event => {
         "conditions": [
             {
                 "fluidTag": "forge:lpg",
-                "type": "createaddition:has_fluid_tag"
-            }
-        ]
-    })
-
-    event.custom({
-        "type": "createaddition:liquid_burning",
-        "input": {
-            "fluidTag": "forge:gasoline",
-            "amount": 1000
-        },
-        "burnTime": 8100,
-        "superheated": true,
-        "conditions": [
-            {
-                "fluidTag": "forge:gasoline",
-                "type": "createaddition:has_fluid_tag"
-            }
-        ]
-    })
-
-    event.custom({
-        "type": "createaddition:liquid_burning",
-        "input": {
-            "fluidTag": "forge:diesel",
-            "amount": 1000
-        },
-        "burnTime": 10800,
-        "superheated": false,
-        "conditions": [
-            {
-                "fluidTag": "forge:diesel",
                 "type": "createaddition:has_fluid_tag"
             }
         ]
@@ -117,7 +85,7 @@ ServerEvents.recipes(event => {
             "fluidTag": "forge:naphtha",
             "amount": 1000
         },
-        "burnTime": 12000,
+        "burnTime": 60000,
         "superheated": false,
         "conditions": [
             {

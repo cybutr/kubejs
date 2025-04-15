@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         event.smithing(output, template, input, upgradeItem).id(`kubejs:smithing/${output.split(':')[1]}`)
     }
     let c = 'kubejs:andesite_machine'
-    let w = 'create:wrench'
+    let w = 'kubejs:andesite_upgrade_smithing_template'
     sc('create:andesite_funnel', c, 3)
     sc('create:andesite_tunnel', c, 3)
     sc('create:gearbox', c, 3)
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
             C: 'minecraft:iron_block',
             D: 'create:shaft'
         }
-    ).id('kubejs:shaped/mechanical_press')
+    ).damageIngredient('#forge:saws', '5').id('kubejs:shaped/mechanical_press')
 
     event.shaped(
         Item.of('create:mechanical_mixer', 1),
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
             C: 'create:whisk',
             D: 'create:andesite_alloy'
         }
-    ).id('kubejs:shaped/mechanical_mixer')
+    ).damageIngredient('#forge:saws', '5').id('kubejs:shaped/mechanical_mixer')
 
     event.shaped(
         Item.of('vintageimprovements:spring_coiling_machine', 1),

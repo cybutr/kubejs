@@ -15,6 +15,7 @@ ServerEvents.tags('item', event => {
     event.remove('forge:ingots/industrial_iron', 'createdeco:industrial_iron_ingot')
     event.remove('c:nuggets/steel', ['createnuclear:steel_nugget', 'tconstruct:steel_nugget'])
     event.remove('createbigcannons:sheet_steel', 'create_dd:sheet_steel')
+    event.add('kubejs:deepslate', ['#forge:deepslate', 'cobbled_deepslate', '#create:stone_types/deepslate', '#chipped:deepslate'])
     event.removeAllTagsFrom(['createbigcannons:cast_iron_ingot', 'createdeco:industrial_iron_ingot', 'createnuclear:steel_nugget', 'tconstruct:steel_nugget', 'create_dd:sheet_steel', 
         'createbigcannons:steel_block', 'tconstruct:steel_block', 'createbigcannons:molten_steel', 'tconstruct:molten_steel', 'incubation:fried_egg', 'naturalist:cooked_egg'])
 })

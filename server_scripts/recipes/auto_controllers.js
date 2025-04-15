@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             D: 'kubejs:brass_machine',
             E: 'create:vertical_gearbox'
         }
-    ).id('createbigcannons:auto_pitch_controller')
+    ).damageIngredient('#forge:screwdrivers', '5').id('createbigcannons:auto_pitch_controller')
 
     event.shaped(
         Item.of('create_radar:auto_yaw_controller', 1),
@@ -27,5 +27,5 @@ ServerEvents.recipes(event => {
             D: 'kubejs:brass_machine',
             E: 'create:vertical_gearbox'
         }
-    ).id('createbigcannons:auto_yaw_controller')
+    ).damageIngredient('#forge:screwdrivers', '5').id('createbigcannons:auto_yaw_controller')
 })

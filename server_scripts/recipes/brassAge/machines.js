@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     }
     let c = 'kubejs:brass_machine'
     let i = 'create_dd:integrated_mechanism'
-    let w = 'create:wrench'
+    let w = 'kubejs:brass_upgrade_smithing_template'
     sm('4x create:sequenced_gearshift', c, w, 'create:electron_tube')
     sm('4x create:brass_tunnel', i, w, 'create:electron_tube')
     sm('4x create:brass_funnel', i, w, 'create:electron_tube')
@@ -74,5 +74,5 @@ ServerEvents.recipes(event => {
         H: 'create_sa:steam_engine',
         B: 'minecraft:copper_block',
         S: '#forge:screwdrivers'
-    }).id('kubejs:shaped/steam_engine')
+    }).damageIngredient('#forge:screwdrivers', '5').id('kubejs:shaped/steam_engine')
 })

@@ -12,5 +12,5 @@ ServerEvents.recipes(event => {
             C: 'create_dd:hydraulic_casing',
             S: '#forge:screwdrivers'
         }
-    )
+    ).damageIngredient('#forge:screwdrivers', '5').id('create_dd:hydraulic_press')
 })

@@ -45,6 +45,6 @@ ServerEvents.recipes(event => {
         N: 'kubejs:nickel_tube',      
         S: 'createnuclear:graphene' ,
         F: 'tfmg:fuse',
-        L: 'toms_peripherals:gpu_chip'
+        L: 'minecraft:amethyst_shard'
     })
 })

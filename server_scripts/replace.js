@@ -1,4 +1,4 @@
-let itemPairs = [
+/* let itemPairs = [
     ['quark:limestone', 'create:limestone'],
     ['alexscaves:limestone', 'create:limestone'],
     ['alexscaves:smooth_limestone', 'create:cut_imestone'],
@@ -22,4 +22,4 @@ itemPairs.forEach(pair => {
         else if (slot >= 36) slot -= 36
         event.getEntity().inventory.set(slot, Item.of(newItem, heldItem.getCount()))
     })
-})
+}) */

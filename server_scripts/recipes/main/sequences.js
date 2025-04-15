@@ -23,7 +23,8 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(t, [t, 'minecraft:iron_ingot'])
     ]).transitionalItem(t).loops(1)
     
-    const grasses = ['minecraft:tall_grass', 'upgrade_aquatic:tall_beachgrass', 'tconstruct:earth_slime_tall_grass', 'tconstruct:sky_slime_tall_grass', 'tconstruct:blood_slime_tall_grass', 'tconstruct:ender_slime_tall_grass']
+    const grasses = ['minecraft:tall_grass', 'minecraft:large_fern', 'tconstruct:earth_slime_tall_grass', 'tconstruct:sky_slime_tall_grass', 'tconstruct:blood_slime_tall_grass', 'tconstruct:ender_slime_tall_grass', 
+        'minecraft:grass', 'minecraft:fern', 'tconstruct:earth_slime_fern', 'tconstruct:sky_slime_fern', 'tconstruct:blood_slime_fern', 'tconstruct:ender_slime_fern']
     grasses.forEach(t => {
         event.recipes.createSequencedAssembly([
             `2x ${t}`,

@@ -13,5 +13,5 @@ ServerEvents.recipes(event => {
             D: 'kubejs:andesite_machine',
             E: 'create:piston_extension_pole'
         }
-    ).id('createbigcannons:cannon_builder')
+    ).damageIngredient('#forge:screwdrivers', '5').id('createbigcannons:cannon_builder')
 })
