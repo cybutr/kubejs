@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     let inter = Item.of('kubejs:copper_machine')
-    let inter2 = Item.of('kubejs:andesite_machine')
+    let inter2 = Item.of('kubejs:incomplete_copper_machine')
     event.recipes.create.sequenced_assembly('kubejs:copper_machine', 'kubejs:andesite_machine', 
         [event.recipes.createDeploying(inter2, [inter2, 'minecraft:gold_nugget']),
         event.recipes.createCutting(inter2, inter2),

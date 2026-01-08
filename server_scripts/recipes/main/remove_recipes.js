@@ -460,7 +460,11 @@ ServerEvents.recipes(event => {
         'create_dd:deploying/infablock/infanetherrack',
         'create_dd:deploying/infablock/infamagma',
         'create_dd:deploying/infablock/infamoss',
-        'create:crafting/kinetics/vertical_gearbox'
+        'create:crafting/kinetics/vertical_gearbox',
+        'create_dd:industrial_iron/mechanical_drill',
+        'alexsmobs:dimensional_carver',
+        'createpropulsion:mixing/turpentine',
+        'createpropulsion:crafting/physics_assembler',
     ]
     
     let recipeOutputs = [

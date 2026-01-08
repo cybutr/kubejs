@@ -1,4 +1,4 @@
-const blocks = ['campfire', 'createnuclear:enriching_campfire', 'soul_campfire']; // add as many blocks as needed
+const blocks = ['campfire', 'soul_campfire']; // add as many blocks as needed
 
 blocks.forEach(block => {
     BlockEvents.rightClicked(block, event => {
@@ -16,7 +16,7 @@ blocks.forEach(block => {
 });
 
 EntityEvents.spawned('item_display', event => {
-    event.server.scheduleInTicks(0, () => {
+    event.server.scheduleInTicks(1, () => {
         if (!event.entity.passengers.isEmpty()) return;
         event.cancel();
     });

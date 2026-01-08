@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
-    let inter = 'kubejs:steel_machine'
-    let inter2 = 'tfmg:heavy_machinery_casing'
+    let inter = 'kubejs:brass_machine'
+    let inter2 = 'kubejs:incomplete_steel_machine'
     event.recipes.create.sequenced_assembly(
         Item.of('kubejs:steel_machine', 1),
         Item.of('kubejs:brass_machine', 1),

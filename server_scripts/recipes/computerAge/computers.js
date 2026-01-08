@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(inter, [inter, 'createrailwaysnavigator:advanced_display']),
         event.recipes.create.deploying(inter, [inter, '#forge:screwdrivers'])]).transitionalItem(inter).loops(1).id('kubejs:sequenced_assembly/computer_normal')
 
-    let iinter = Item.of('kubejs:incomplete_computer')
+    let iinter = Item.of('advancedperipherals:peripheral_casing')
     event.recipes.create.sequenced_assembly('kubejs:incomplete_computer', 'advancedperipherals:peripheral_casing',
         [event.recipes.create.cutting(iinter, iinter),
         event.recipes.create.filling(iinter, [iinter, Fluid.of('tconstruct:molten_copper', 450)]),
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(ainter, [ainter, 'minecraft:gold_ingot']),
         event.recipes.create.pressing(ainter, ainter)]).transitionalItem(ainter).loops(1).id('kubejs:sequenced_assembly/advanced_computer')
 
-    let apinter = Item.of('computercraft:pocket_computer')
+    let apinter = Item.of('computercraft:pocket_computer_normal')
     event.recipes.create.sequenced_assembly('computercraft:pocket_computer_advanced', 'computercraft:pocket_computer_normal',
         [event.recipes.create.cutting(apinter, apinter),
         event.recipes.create.deploying(apinter, [apinter, 'vintageimprovements:refined_obsidian_wire']),

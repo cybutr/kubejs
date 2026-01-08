@@ -133,5 +133,11 @@
         'vs_tournament:explosive_staged_small',
         'vs_tournament:upgrade_thruster',
         'create_interactive:buffer_stop',
-        'create_things_and_misc:train_stop'
+        'create_things_and_misc:train_stop',
+        'kubejs:incomplete_steel_machine',
+        'kubejs:incomplete_brass_machine',
+        'kubejs:incomplete_copper_machine',
+        'kubejs:incomplete_andeisite_machine',
+        'kubejs:incomplete_blazing_machine',
+        'kubejs:incomplete_electrum_shard'
     ])})

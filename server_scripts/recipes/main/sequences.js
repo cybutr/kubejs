@@ -22,6 +22,19 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(t, [t, 'minecraft:iron_ingot']),
         event.recipes.createDeploying(t, [t, 'minecraft:iron_ingot'])
     ]).transitionalItem(t).loops(1)
+    let v = Item.of('create:brass_casing')
+    event.recipes.createSequencedAssembly([
+        'drivebywire:tweaked_controller_hub',
+    ], Item.of('create:brass_casing'), [
+        event.recipes.createDeploying(v, [v, Item.of('create_tweaked_controllers:tweaked_linked_controller')]),
+        event.recipes.createPressing(v, v)
+    ]).transitionalItem(v).loops(1)
+    event.recipes.createSequencedAssembly([
+        'drivebywire:controller_hub',
+    ], Item.of('create:brass_casing'), [
+        event.recipes.createDeploying(v, [v, Item.of('create:linked_controller')]),
+        event.recipes.createPressing(v, v)
+    ]).transitionalItem(v).loops(1)
     
     const grasses = ['minecraft:tall_grass', 'minecraft:large_fern', 'tconstruct:earth_slime_tall_grass', 'tconstruct:sky_slime_tall_grass', 'tconstruct:blood_slime_tall_grass', 'tconstruct:ender_slime_tall_grass', 
         'minecraft:grass', 'minecraft:fern', 'tconstruct:earth_slime_fern', 'tconstruct:sky_slime_fern', 'tconstruct:blood_slime_fern', 'tconstruct:ender_slime_fern']

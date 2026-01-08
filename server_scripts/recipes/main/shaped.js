@@ -112,4 +112,48 @@ ServerEvents.recipes(event => {
             E: '#minecraft:planks'
         }
     ).id('kubejs:shaped/wooden_brewingstation')
+
+    event.shaped(
+        Item.of('drivebywire:wire', 1),
+        [
+            'BAA',
+            'ACA',
+            'AAB'
+        ],
+        {
+            A: 'create_dd:rubber',
+            B: 'minecraft:iron_nugget',
+            C: 'createaddition:copper_wire'
+        }
+    ).id('kubejs:shaped/wire')
+
+    event.shaped(
+        Item.of('drivebywire:wire_cutters', 1),
+        [
+            'A A',
+            'BAB',
+            'C C'
+        ],
+        {
+            A: 'create:iron_sheet',
+            B: 'minecraft:blue_dye',
+            C: 'create_dd:rubber'
+        }
+    ).id('kubejs:shaped/wire_cutters')
+
+    event.shaped(
+        Item.of('createpropulsion:thruster', 1),
+        [
+            'ABA',
+            'CDC',
+            ' E '
+        ],
+        {
+            A: 'create:fluid_pipe',
+            B: 'createpropulsion:assembly_gauge',
+            C: 'create:iron_sheet',
+            D: 'kubejs:brass_machine',
+            E: 'create:chute'
+        }
+    ).id('kubejs:shaped/thruster')
 })
