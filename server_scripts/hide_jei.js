@@ -139,5 +139,8 @@
         'kubejs:incomplete_copper_machine',
         'kubejs:incomplete_andeisite_machine',
         'kubejs:incomplete_blazing_machine',
-        'kubejs:incomplete_electrum_shard'
+        'kubejs:incomplete_electrum_shard',
+        'alexsmobs:dimensional_carver',
+        'alexsmobs:shattered_dimensional_carver',
+        'northstar:combustion_engine',
     ])})

@@ -16,8 +16,8 @@ ServerEvents.recipes(event => {
     sm('2x railways:portable_fuel_interface', i, w, 'create:railway_casing')
     sc('create_things_and_misc:card_reader', c, 1)
     sc('create_things_and_misc:card_press', c, 1)
-    sc('create_connected:brass_gearbox', c, 2)
-    sc('create_connected:vertical_brass_gearbox', c, 2)
+    sc('create_connected:brass_gearbox', c, 4)
+    sc('create_connected:vertical_brass_gearbox', c, 4)
     event.recipes.create.mechanical_crafting('petrolsparts:hydraulic_transmission', [
         'CSM',
         'HPB',
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         B: 'create:brass_sheet',
         O: 'minecraft:obsidian',
     }).id('kubejs:create/wand_of_symmetry')
-    event.shaped(Item.of('create:steam_engine', 2), [
+    event.shaped(Item.of('create:steam_engine', 3), [
         ' G ',
         ' AH',
         'BCS'

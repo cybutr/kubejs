@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     let inter = Item.of('kubejs:limestone_shard')
-    event.recipes.create.sequenced_assembly(Item.of('kubejs:calcite_catalyst'), Item.of('kubejs:limestone_shard'),
+    event.recipes.create.sequenced_assembly(Item.of('kubejs:calcite_catalyst', 2), Item.of('kubejs:limestone_shard'),
         [event.recipes.createPressing(inter, inter),
         event.recipes.createFilling(inter, [inter, Fluid.of('kubejs:liquid_garnish', 180)]),
         event.recipes.createFilling(inter, [inter, Fluid.water(180)])]

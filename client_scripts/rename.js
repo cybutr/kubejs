@@ -1,4 +1,10 @@
 ClientEvents.lang('en_us', event => {
     event.renameItem("functionalstorage:gold_upgrade", "Brass Upgrade")
     event.renameItem("create:brass_hand", "Deployer Hand")
+    event.renameItem("northstar:circuit", "Amethyst Circuit")
+    event.renameItem("northstar:advanced_circuit", "Advanced Sapphire Circuit")
+    event.renameItem("northstar:iron_space_suit_helmet", "Nether Steel Space Suit Helmet")
+    event.renameItem("northstar:iron_space_suit_chestpiece", "Nether Steel Space Suit Chestpiece")
+    event.renameItem("northstar:iron_space_suit_leggings", "Nether Steel Space Suit Leggings")
+    event.renameItem("northstar:iron_space_suit_boots", "Nether Steel Space Suit Boots")
 })

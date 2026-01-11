@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
 	}).id("kubejs:melting/steel_scrap")
 	event.custom({
 		"type": "tconstruct:melting",
-		"ingredient": { "item": "fmg:steel_ingot" },
+		"ingredient": { "item": "tfmg:steel_ingot" },
 		"result": { "fluid": "tfmg:molten_steel", "amount": 90 },
 		"temperature": 810,
 		"time": 9
@@ -315,191 +315,225 @@ ServerEvents.recipes(event => {
 
 	orestones.forEach(i => {
 		let prefix = i[2] || 'create';
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':' + i[0]
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": time
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':cut_' + i[0]
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": time
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':cut_' + i[0] + "_stairs"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": stairsTime
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':cut_' + i[0] + "_wall"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": wallTime
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':polished_cut_' + i[0]
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": time
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':polished_cut_' + i[0] + "_stairs"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": stairsTime
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':polished_cut_' + i[0] + "_wall"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": wallTime
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':small_' + i[0] + "_bricks"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": time
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':small_' + i[0] + "_brick_stairs"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": stairsTime
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':small_' + i[0] + "_brick_wall"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": wallTime
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':layered_' + i[0]
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": time
-		});
-		
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':' + i[0] + "_pillar"
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": time
-		});
-		
-		// Add slab variant for every orestone.
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": prefix + ':slab_' + i[0]
-			},
-			"result": {
-				"fluid": i[1],
-				"amount": h
-			},
-			"temperature": temperature,
-			"time": slabTime
-		});
-		
-		// Only add the mossy variant for the specified orestones using the create_dd prefix.
-		if (['veridium', 'asurine', 'crimsite', 'ochrum'].includes(i[0])) {
+		let name = i[0];
+		let fluid = i[1];
+
+		let variants = [
+			{ item: `${prefix}:${name}`, time: time },
+			{ item: `${prefix}:cut_${name}`, time: time },
+			{ item: `${prefix}:cut_${name}_stairs`, time: stairsTime },
+			{ item: `${prefix}:cut_${name}_wall`, time: wallTime },
+			{ item: `${prefix}:cut_${name}_slab`, time: slabTime },
+			{ item: `${prefix}:polished_cut_${name}`, time: time },
+			{ item: `${prefix}:polished_cut_${name}_stairs`, time: stairsTime },
+			{ item: `${prefix}:polished_cut_${name}_wall`, time: wallTime },
+			{ item: `${prefix}:polished_cut_${name}_slab`, time: slabTime },
+			{ item: `${prefix}:small_${name}_bricks`, time: time },
+			{ item: `${prefix}:small_${name}_brick_stairs`, time: stairsTime },
+			{ item: `${prefix}:small_${name}_brick_wall`, time: wallTime },
+			{ item: `${prefix}:small_${name}_brick_slab`, time: slabTime },
+			{ item: `${prefix}:cut_${name}_bricks`, time: time },
+			{ item: `${prefix}:cut_${name}_brick_stairs`, time: stairsTime },
+			{ item: `${prefix}:cut_${name}_brick_slab`, time: slabTime },
+			{ item: `${prefix}:cut_${name}_brick_wall`, time: wallTime },
+			{ item: `${prefix}:layered_${name}`, time: time },
+			{ item: `${prefix}:${name}_pillar`, time: time },
+			{ item: `${prefix}:slab_${name}`, time: slabTime },
+			{ item: `design_decor:${name}_castel_brick_stairs`, time: stairsTime },
+			{ item: `design_decor:${name}_castel_brick_slab`, time: slabTime },
+			{ item: `design_decor:${name}_castel_brick_wall`, time: wallTime },
+			{ item: `design_decor:${name}_castel_bricks`, time: time },
+			{ item: `design_decor:${name}_castel_tile_stairs`, time: stairsTime },
+			{ item: `design_decor:${name}_castel_tile_slab`, time: slabTime },
+			{ item: `design_decor:${name}_castel_tiles`, time: time },
+			{ item: `create_dd:${name}_asphalt_block`, time: time },
+			{ item: `create_dd:${name}_mossy_bricks`, time: time }
+		];
+
+		if (['veridium', 'asurine', 'crimsite', 'ochrum'].includes(name)) {
+			variants.push({ item: `create_dd:mossy_${name}`, time: time });
+		}
+
+		variants.forEach(variant => {
 			event.custom({
 				"type": "tconstruct:melting",
-				"ingredient": {
-					"item": "create_dd:mossy_" + i[0]
-				},
-				"result": {
-					"fluid": i[1],
-					"amount": h
-				},
+				"ingredient": { "item": variant.item },
+				"result": { "fluid": fluid, "amount": h },
 				"temperature": temperature,
-				"time": time
-			});
-		}
+				"time": variant.time
+			}).id(`kubejs:melting/${variant.item.replace(/:/g, '_')}`);
+		});
 	});
+
+	event.custom({
+	"type": "tconstruct:casting_table",
+	"cast": {
+		"tag": "tconstruct:casts/multi_use/plate"
+	},
+	"conditions": [
+		{
+		"type": "mantle:tag_filled",
+		"tag": "forge:plates/refined_obsidian"
+		}
+	],
+	"cooling_time": 47,
+	"fluid": {
+		"amount": 90,
+		"tag": "forge:molten_refined_obsidian"
+	},
+	"result": {
+		"tag": "forge:plates/refined_obsidian"
+	}
+	}).id('kubejs:casting/multi_use/refined_obsidian_plate')
+
+	event.custom({
+	"type": "tconstruct:casting_table",
+	"cast": {
+		"tag": "tconstruct:casts/single_use/plate"
+	},
+	"cast_consumed": true,
+	"conditions": [
+		{
+		"type": "mantle:tag_filled",
+		"tag": "forge:plates/refined_obsidian"
+		}
+	],
+	"cooling_time": 47,
+	"fluid": {
+		"amount": 90,
+		"tag": "forge:molten_refined_obsidian"
+	},
+	"result": {
+		"tag": "forge:plates/refined_obsidian"
+	}
+	}).id('kubejs:casting/single_use/refined_obsidian_plate')
+
+	event.custom({
+	"type": "tconstruct:casting_table",
+	"cast": {
+		"item": "minecraft:cobweb"
+	},
+	"cast_consumed": true,
+	"cooling_time": 52,
+	"fluid": {
+		"amount": 90,
+		"tag": "forge:molten_silver"
+	},
+	"result": "tconstruct:silky_cloth"
+	}).id('kubejs:casting/silky_cloth')
+
+	event.custom({
+	"type": "tconstruct:casting_table",
+	"cast": {
+		"tag": "tconstruct:casts/multi_use/ingot"
+	},
+	"cooling_time": 57,
+	"fluid": {
+		"amount": 90,
+		"tag": "c:molten_nethersteel"
+	},
+	"result": {
+		"tag": "forge:ingots/nethersteel"
+	}
+	}).id('kubejs:casting/multi_use/nethersteel_ingot')
+
+	event.custom({
+	"type": "tconstruct:casting_table",
+	"cast": {
+		"tag": "tconstruct:casts/single_use/ingot"
+	},
+	"cast_consumed": true,
+	"cooling_time": 57,
+	"fluid": {
+		"amount": 90,
+		"tag": "c:molten_nethersteel"
+	},
+	"result": {
+		"tag": "forge:ingots/nethersteel"
+	}
+	}).id('kubejs:casting/single_use/nethersteel_ingot')
+	event.custom({
+		"type": "tconstruct:casting_table",
+		"cast": {
+			"tag": "tconstruct:casts/multi_use/ingot"
+		},
+		"cooling_time": 57,
+		"fluid": {
+			"amount": 90,
+			"name": "createbigcannons:molten_cast_iron"
+		},
+		"result": {
+			"item": "tfmg:cast_iron_ingot"
+		}
+	}).id('kubejs:casting/multi_use/cast_iron_ingot')
+
+	event.custom({
+		"type": "tconstruct:casting_table",
+		"cast": {
+			"tag": "tconstruct:casts/single_use/ingot"
+		},
+		"cast_consumed": true,
+		"cooling_time": 57,
+		"fluid": {
+			"amount": 90,
+			"name": "createbigcannons:molten_cast_iron"
+		},
+		"result": {
+			"item": "tfmg:cast_iron_ingot"
+		}
+	}).id('kubejs:casting/single_use/cast_iron_ingot')
+	event.custom({
+		"type": "tconstruct:ore_melting",
+		"conditions": [
+			{
+				"type": "mantle:tag_combination_filled",
+				"ignore": "tconstruct:non_singular_ore_rates",
+				"match": "forge:ores/iron"
+			}
+		],
+		"ingredient": {
+			"type": "forge:difference",
+			"base": {
+				"tag": "forge:ores/iron"
+			},
+			"subtracted": {
+				"tag": "tconstruct:non_singular_ore_rates"
+			}
+		},
+		"rate": "metal",
+		"result": {
+			"amount": 180,
+			"tag": "forge:molten_iron"
+		},
+		"temperature": 800,
+		"time": 150
+	}).id('kubejs:ore_melting/iron_singular')
+
+	event.custom({
+		"type": "tconstruct:ore_melting",
+		"ingredient": {
+			"tag": "forge:storage_blocks/raw_iron"
+		},
+		"rate": "metal",
+		"result": {
+			"amount": 1620,
+			"tag": "forge:molten_iron"
+		},
+		"temperature": 800,
+		"time": 361
+	}).id('kubejs:ore_melting/raw_iron_block')
+
+	event.custom({
+		"type": "tconstruct:ore_melting",
+		"ingredient": {
+			"tag": "forge:raw_materials/iron"
+		},
+		"rate": "metal",
+		"result": {
+			"amount": 180,
+			"tag": "forge:molten_iron"
+		},
+		"temperature": 800,
+		"time": 90
+	}).id('kubejs:ore_melting/raw_iron')
 })

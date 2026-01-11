@@ -284,7 +284,7 @@
     return this.outputNativeCreate(output)
     }
     //#endregion
-    ServerEvents.recipes(event => {
+/*     ServerEvents.recipes(event => {
         new SequencedAssembly(
             event,
             'tfmg:heavy_machinery_casing'
@@ -292,4 +292,4 @@
             .custom('Next: Mix in a mixer', (pre, post) => {
                 event.recipes.create.mixing(post, [pre, 'kubejs:brass_machine']).heated().id('kubejs:sequenced_assembly/tsteel_machine/mixing')
             }).outputs('1x kubejs:tsteel_machine')
-    })
+    }) */

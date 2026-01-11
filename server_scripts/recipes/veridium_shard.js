@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     let inter = Item.of('kubejs:incomplete_veridium_shard')
-    event.recipes.create.sequenced_assembly([Item.of('kubejs:veridium_shard', 2).withChance(0.90), Item.of('kubejs:veridium_shard', 1).withChance(0.10)],
+    event.recipes.create.sequenced_assembly([Item.of('kubejs:veridium_shard', 4).withChance(0.90), Item.of('kubejs:veridium_shard', 2).withChance(0.10)],
     Item.of('kubejs:obsidian_alloy'),
         [
         event.recipes.createDeploying(inter, [inter, 'create:copper_nugget']),

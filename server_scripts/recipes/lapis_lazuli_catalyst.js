@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
     let inter = Item.of('kubejs:incomplete_lapis_lazuli_catalyst')
     event.recipes.create.sequenced_assembly([
-        Item.of('kubejs:lapis_lazuli_catalyst', 4).withChance(0.75),
-        Item.of('kubejs:lapis_lazuli_catalyst', 3).withChance(0.25)
+        Item.of('kubejs:lapis_lazuli_catalyst', 5).withChance(0.75),
+        Item.of('kubejs:lapis_lazuli_catalyst', 4).withChance(0.25)
     ], 'minecraft:stone', [
         event.recipes.createDeploying(inter, [inter, 'minecraft:blue_dye']),
         event.recipes.createFilling(inter, [inter, Fluid.lava(180)]),

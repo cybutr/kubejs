@@ -14,4 +14,14 @@
 ## 4. Steel Age
 - [X] Done
 ## Others
-- Northstar
+- Apotheosis
+- Modify Tool/Armor Properties
+- Iron Golem
+- Boost the Outputs
+- Textures - KubeJS, Vintage Improvements,
+## Materials
+
+# Pre Server Start Check
+
+## 1. Configs
+- [] BlockSwap - Galena,

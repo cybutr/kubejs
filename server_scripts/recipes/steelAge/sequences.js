@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     let inter = Item.of('tfmg:unfinished_steel_mechanism')
     event.recipes.create.sequenced_assembly(
         [
-            Item.of('tfmg:steel_mechanism'),
+            Item.of('tfmg:steel_mechanism', 2),
             Item.of('tfmg:heavy_plate').withChance(0.08),
             Item.of('tfmg:steel_ingot').withChance(0.08),
             Item.of('tfmg:aluminum_ingot').withChance(0.05),

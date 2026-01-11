@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:shaped/wire')
 
     event.shaped(
-        Item.of('drivebywire:wire_cutters', 1),
+        Item.of('drivebywire:wire_cutter', 1),
         [
             'A A',
             'BAB',
@@ -150,10 +150,24 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'create:fluid_pipe',
-            B: 'createpropulsion:assembly_gauge',
-            C: 'create:iron_sheet',
-            D: 'kubejs:brass_machine',
+            B: 'create_dd:infernal_mechanism',
+            C: 'create_dd:steel_sheet',
+            D: 'kubejs:steel_machine',
             E: 'create:chute'
         }
     ).id('kubejs:shaped/thruster')
+
+    event.shaped(
+        Item.of('northstar:jet_engine', 1),
+        [
+            ' A ',
+            'BCB',
+            '   ',
+        ],
+        {
+            A: 'create_dd:inductive_mechanism',
+            B: 'tfmg:steel_pipe',
+            C: 'createpropulsion:thruster'
+        }
+    ).id('kubejs:shaped/jet_engine')
 })

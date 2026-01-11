@@ -7,13 +7,17 @@ ServerEvents.recipes(event => {
     }
     let c = 'kubejs:andesite_machine'
     let w = 'kubejs:andesite_upgrade_smithing_template'
-    sc('create:andesite_funnel', c, 3)
-    sc('create:andesite_tunnel', c, 3)
-    sc('create:gearbox', c, 3)
-    sc('create:vertical_gearbox', c, 3)
+    sc('create:andesite_funnel', c, 4)
+    sc('create:andesite_tunnel', c, 4)
+    sc('create:gearbox', c, 4)
+    sc('create:vertical_gearbox', c, 4)
     sc('create:portable_storage_interface', c, 2)
-    sm('create_connected:six_way_gearbox', 'create:gearbox', w, 'create:vertical_gearbox')
-    sm('create_connected:vertical_six_way_gearbox', 'create:vertical_gearbox', w, 'create:gearbox')
+    sc('trackwork:track_level_controller', c, 1)
+    sc('railways:track_switch_andesite', c, 2)
+    sc("create:mechanical_harvester", c, 2)
+    sc("create:mechanical_plough", c, 2)
+    sm('2x create_connected:six_way_gearbox', 'create:gearbox', w, 'create:vertical_gearbox')
+    sm('2x create_connected:vertical_six_way_gearbox', 'create:vertical_gearbox', w, 'create:gearbox')
     sm('2x create_connected:parallel_gearbox', 'create:gearbox', w, 'create:large_cogwheel')
     sm('2x create_connected:vertical_parallel_gearbox', 'create:vertical_gearbox', w, 'create:large_cogwheel')
     sm('create_radar:radar_receiver_block', c, w, 'minecraft:lightning_rod')
@@ -24,6 +28,8 @@ ServerEvents.recipes(event => {
     sm('create:mechanical_drill', c, w, 'kubejs:drill_head')
     sm('create:mechanical_saw', c, w, 'kubejs:saw_blade')
     sm('create:deployer', c, w, 'create:brass_hand')
+    sm('create:mechanical_roller', c, w, 'create:crushing_wheel')
+    sm('sliceanddice:slicer', c, w, 'create:turntable')
 
     event.shaped(
         Item.of('create:large_water_wheel', 1),
