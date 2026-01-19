@@ -16,7 +16,6 @@
 ## Others
 - Apotheosis
 - Modify Tool/Armor Properties
-- Iron Golem
 - Boost the Outputs
 - Textures - KubeJS, Vintage Improvements,
 ## Materials

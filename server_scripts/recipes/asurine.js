@@ -7,6 +7,6 @@
 ServerEvents.recipes(event => {
     event.recipes.vintageimprovements.pressurizing(
         Item.of('create:asurine', 4),
-        [Fluid.of('kubejs:purified_water', 180), Item.of('minecraft:clay_ball', 2), Item.of('minecraft:stone', 4), Item.of('kubejs:asurine_shard')])
+        [Fluid.of('kubejs:purified_water', 180), Item.of('minecraft:clay_ball', 2), Item.of('minecraft:dee pslate', 4), Item.of('kubejs:asurine_shard')])
         .secondaryFluidInput(0).processingTime(180).heated().id('kubejs:pressurizing/asurine')
 })
