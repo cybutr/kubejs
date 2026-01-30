@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
     let binter = Item.of('tfmg:aluminum_ingot')
-    event.recipes.create.sequenced_assembly('2x tfmg:lithium_charge', 'tfmg:aluminum_ingot',
+    event.recipes.create.sequenced_assembly('4x tfmg:lithium_charge', 'tfmg:aluminum_ingot',
         [event.recipes.create.deploying(binter, [binter, 'tfmg:bottle_of_battery_acid']),
         event.recipes.create.deploying(binter, [binter, 'tfmg:lithium_ingot']),
         event.recipes.create.deploying(binter, [binter, 'tfmg:plastic_sheet']),
         event.recipes.create.pressing(binter, binter)]).transitionalItem(binter).loops(1).id('kubejs:sequenced_assembly/lithium_charge')
 
-    event.recipes.create.mechanical_crafting('kubejs:motherboard', [
+    event.recipes.create.mechanical_crafting('2x kubejs:motherboard', [
         ' TNT ',
         'RWCGR',
         'BBCBB'
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         N: 'create:nixie_tube'
     }).id('kubejs:mechanical_crafting/motherboard')
 
-    event.recipes.create.mechanical_crafting('3x kubejs:hard_drive', [
+    event.recipes.create.mechanical_crafting('6x kubejs:hard_drive', [
         ' ICI ',
         'RMLR ',
         ' S S '
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         L: 'create_dd:inductive_mechanism'
     }).id('kubejs:mechanical_crafting/hard_drive')
 
-    event.recipes.create.mechanical_crafting('2x kubejs:graphics_unit', [
+    event.recipes.create.mechanical_crafting('4x kubejs:graphics_unit', [
         ' GFR ',
         'CLNTC',
         ' SFS '

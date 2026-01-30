@@ -11,4 +11,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(
         Item.of('create:crushed_raw_aluminum', 1).withChance(0.4),
         Item.of('tfmg:bauxite', 1)).id('kubejs:milling/crushed_raw_aluminum')
+  event.recipes.create.milling('minecraft:gravel', "minecraft:mossy_cobblestone").id('kubejs:milling/gravel')
+  event.recipes.create.milling(Item.of('minecraft:sand').withChance(0.33), "minecraft:gravel").id('kubejs:milling/sand')
 })

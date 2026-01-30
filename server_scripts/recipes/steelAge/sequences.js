@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     let inter = Item.of('tfmg:unfinished_steel_mechanism')
     event.recipes.create.sequenced_assembly(
         [
-            Item.of('tfmg:steel_mechanism', 2),
+            Item.of('tfmg:steel_mechanism', 4),
             Item.of('tfmg:heavy_plate').withChance(0.08),
             Item.of('tfmg:steel_ingot').withChance(0.08),
             Item.of('tfmg:aluminum_ingot').withChance(0.05),
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         ]
     )
     .transitionalItem(interTurbine)
-    .loops(6)
+    .loops(2)
     .id('kubejs:sequence/turbine_engine')
 
     // LPG Engine Recipe
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
         ]
     )
     .transitionalItem(interLpg)
-    .loops(8)
+    .loops(2)
     .id('kubejs:sequence/lpg_engine')
 
     // Gasoline Engine Recipe
@@ -71,6 +71,6 @@ ServerEvents.recipes(event => {
         ]
     )
     .transitionalItem(interGas)
-    .loops(8)
+    .loops(2)
     .id('kubejs:sequence/gasoline_engine')
 })

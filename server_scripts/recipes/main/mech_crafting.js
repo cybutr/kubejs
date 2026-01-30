@@ -182,4 +182,13 @@ ServerEvents.recipes(event => {
         D: "northstar:martian_steel_boots"
     }).id('northstar:mechanical_crafting/martian_steel_space_suit_boots')
 
+    event.recipes.create.mechanical_crafting('create_dd:forest_ravager', [
+        'AA ',
+        'ACB',
+        ' B '
+    ], {
+        A: "create_dd:mithril_sheet",
+        B: "vintageimprovements:refined_obsidian_rod",
+        C: "vs_clockwork:wanderlite_matrix"
+    }).id('create_dd:mechanical_crafting/forest_ravager')
 })

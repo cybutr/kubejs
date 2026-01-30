@@ -501,7 +501,24 @@ ServerEvents.recipes(event => {
         'tconstruct:smeltery/melting/metal/iron/ore_raw',
         'tconstruct:smeltery/melting/metal/iron/raw_block',
         'tconstruct:smeltery/melting/metal/iron/raw',
-        'sliceanddice:slicer'
+        'sliceanddice:slicer',
+        'vintageimprovements:pressing/lead_ingot',
+        'vintageimprovements:pressing/pig_iron_ingot',
+        'create_dd:pressing/bronze_ingot',
+        'vintageimprovements:pressing/cast_iron_ingot',
+        'vintageimprovements:pressing/cobalt_ingot',
+        'vintageimprovements:pressing/hepatizon_ingot',
+        'vintageimprovements:pressing/manyullyn_ingot',
+        'vintageimprovements:pressing/queens_slime_ingot',
+        'vintageimprovements:pressing/rose_gold_ingot',
+        'vintageimprovements:pressing/slimesteel_ingot',
+        'vintageimprovements:pressing/vanadium_ingot',
+        'create_dd:pressing/industrial_iron_ingot',
+        'create_dd:pressing/refined_radiance_ingot',
+        'vintageimprovements:pressing/amethyst_bronze_ingot',
+        'create_dd:pressing/mithril_ingot',
+        'minecraft:wooden_pickaxe',
+        'quark:tweaks/crafting/utility/tools/stone_pickaxe'
     ]
     
     let recipeOutputs = [

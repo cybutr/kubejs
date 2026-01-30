@@ -21,5 +21,5 @@ ServerEvents.recipes(event => {
         ]
       })
         ]
-    ).transitionalItem(inter).loops(4).id('kubejs:sequence/integrated_circuit')
+    ).transitionalItem(inter).loops(2).id('kubejs:sequence/integrated_circuit')
 })

@@ -14,13 +14,10 @@
 ## 4. Steel Age
 - [X] Done
 ## Others
-- Apotheosis
-- Modify Tool/Armor Properties
-- Boost the Outputs
-- Textures - KubeJS, Vintage Improvements,
 ## Materials
 
 # Pre Server Start Check
 
 ## 1. Configs
-- [] BlockSwap - Galena,
+- [X] BlockSwap - Galena,
+- [X] Locks
